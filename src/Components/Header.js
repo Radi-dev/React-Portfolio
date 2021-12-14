@@ -5,20 +5,7 @@ import { NavData } from "./NavData";
 import { Link, BrowserRouter as Router } from "react-router-dom";
 import { HashLink as Link2 } from "react-router-hash-link";
 import { ScrollPosition } from "./scroll";
-// custom Hook
-const ImgOrAlt = (imgURL, altText = "Image") => {
-  /*
-This function displays the target image if its available, but
-only displays alt text (without the broken image icon) when the 
-target image isn't available */
-  const altImg = <div>{altText}</div>;
-  const clickHandler = () => {
-    setImg(altImg);
-  };
-  const imgJsx = <img src={imgURL} alt={altText} onError={clickHandler}></img>;
-  const [Img, setImg] = useState(imgJsx);
-  return Img;
-};
+import ImgOrAlt from "./ImgOrAlt";
 
 // custom Hook
 function OnClickOutside(ref, handler) {
@@ -50,10 +37,10 @@ export default function Header() {
   return (
     <>
       <div
-        className="absolute left-0 p-1 w-10 top-0 z-10 m-3 transition-all duration-1000 transform 
-        lg:rotate-90 md:rotate-45 rounded-md bg-blue-300"
+        className="absolute left-0 p-1 w-20 top-0 z-10 m-3 transition-all duration-1000 transform 
+        rounded-2xl"
       >
-        {ImgOrAlt("hd.jpg")}
+        <ImgOrAlt src="hfd.jpg" alt="radd" style={{borderRadius:20}} />
       </div>
       <div className="header sticky top-0 z-10 mx-3">
         <div className="absolute top-0 m-0 mt-3 right-0">
@@ -66,7 +53,7 @@ export default function Header() {
               } lg:hidden transform hover:scale-110 transition-all ease-in-out p-4 box-border cursor-pointer opacity-70 absolute mr-1 right-0 w-14 h-14  rounded-full `}
               onClick={menuClick}
             >
-              {ImgOrAlt("./menu-icon.png", "Menu")}
+              <ImgOrAlt src="./menu-icon.png" alt="Menu" />
             </div>
             <div
               className={`${

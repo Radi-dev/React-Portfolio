@@ -15,7 +15,7 @@ function Setup() {
   const position = () => window.pageYOffset;
 
   const scrolling = (params) => {
-    currentPos = position();
+    //currentPos = position();
     if (currentPos > 0 || (currentPos < -0 && toTop === false)) {
       setToTop(true);
       console.log("changing to true");
