@@ -1,16 +1,16 @@
 import React from "react";
 import "./Tailwind.css";
-/*import Home from "./Components/Home";
+import Home from "./Components/Home";
 import Header from "./Components/Header";
 import Setup from "./Components/Setup";
 import About from "./Components/About";
 import Projects from "./Components/Projects";
 import Contact from "./Components/Contact";
 import Footer from "./Components/Footer";
-import Blog from "./Components/Blog/blogHome";*/
+import Blog from "./Components/Blog/blogHome";
 import { Routes, Route, BrowserRouter as Router } from "react-router-dom";
 
-/*export default function App() {
+export default function App() {
   const pagejsx = (
     <div className="mother h-full font-Monte  bg-bl ue-200 px-5 py-12" id="top">
       <div className="page-conatainer h-full mx-auto w-full relative overflow-y- scroll snap snap-y snap-mandatory">
@@ -35,4 +35,3 @@ import { Routes, Route, BrowserRouter as Router } from "react-router-dom";
     </Router>
   );
 }
-*/
