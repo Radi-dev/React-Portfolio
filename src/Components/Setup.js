@@ -33,7 +33,7 @@ function Setup() {
   return (
     <>
       <div
-        className=" shadow-lg fixed hover:scale-110 cursor-pointer transform -rotate-90 rounded-3xl px-3 py-1 z-20 bottom-1/4 left-1  bg-gray-100 text-xs text-gray-400"
+        className="sec shadow-lg fixed hover:scale-110 cursor-pointer transform -rotate-90 rounded-3xl px-3 py-1 z-20 bottom-1/4 left-1  bg-gray-1 00 text-xs text-gray-400"
         onClick={setupClick}
       >
         <p>Theme</p>

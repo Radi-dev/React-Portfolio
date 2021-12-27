@@ -56,7 +56,7 @@ function color() {
 export const TypingAnim = () => {
   return (
     <div
-      className=" bg-gray-900 m-2 p-3 shadow-xl text-left rounded border-t-8 
+      className="sec bg -gray-900 m-2 p-3 shadow-xl text-left rounded border-t-8 
      text-gray-200 overflow-hidden font-mono h-20 break-all text-xl md:max-w-sm absolute top-1/4 inset-x-px"
     >
       <Type />
