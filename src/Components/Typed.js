@@ -55,14 +55,13 @@ function randColor() {
 }
 
 export const TypingAnim = () => {
-  const tabColors = ["red", "yellow", "green"];
   return (
     <div
       className=" h-16 m-2 p-3 shadow-xl rounded overflow-hidden
      absolute inset-x-px md:max-w-sm top-1/4"
     >
       <div className="absolute bg-white h-1/5 rounde d-t inset-x-0 top-0">
-        {tabColors.map((color, i) => (
+        {["red", "yellow", "green"].map((color, i) => (
           <div
             className={` bg-${color}-400 w-1.5 h-1.5 rounded-full float-left ml-1 mt-0.5`}
           ></div>
