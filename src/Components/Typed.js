@@ -6,12 +6,12 @@ data = data.concat(data.concat(data));
 
 const Type = () => (
   <div className="typing">
-    <span>$_ I am </span>
+    <span>$. I am </span>
     <Typing hideCursor={true} loop={true} className="inline">
       {data.map((data, i) => {
         return (
           <span key={i}>
-            <span className={" text-" + color() + "-300"}>{data}</span>
+            <span className={" text-" + randColor() + "-300"}>{data}</span>
             <Typing.Delay ms={1000} />
             <Typing.Backspace count={data.length} />
           </span>
@@ -44,22 +44,36 @@ const Type2 = (text) => {
   return (
     <>
       <span className="">$_ I am </span>
-      <span className={"typing text-" + color() + "-300"}>{type}</span>
+      <span className={"typing text-" + randColor() + "-300"}>{type}</span>
     </>
   );
 };
 
-function color() {
+function randColor() {
   const colors = ["green", "yellow", "red", "blue"];
   return colors[Math.floor(Math.random() * colors.length)];
 }
+
 export const TypingAnim = () => {
+  const tabColors = ["red", "yellow", "green"];
   return (
     <div
-      className="sec bg -gray-900 m-2 p-3 shadow-xl text-left rounded border-t-8 
-     text-gray-200 overflow-hidden font-mono h-20 break-all text-xl md:max-w-sm absolute top-1/4 inset-x-px"
+      className=" h-16 m-2 p-3 shadow-xl rounded overflow-hidden
+     absolute inset-x-px md:max-w-sm top-1/4"
     >
-      <Type />
+      <div className="absolute bg-white h-1/5 rounde d-t inset-x-0 top-0">
+        {tabColors.map((color, i) => (
+          <div
+            className={` bg-${color}-400 w-1.5 h-1.5 rounded-full float-left ml-1 mt-0.5`}
+          ></div>
+        ))}
+      </div>
+      <div
+        className="se c bg-transparen t bg-gray-900 text-left 
+     text-gray-200 font-mono break-all text-xl absolute inset-x-0 h-full"
+      >
+        <Type />
+      </div>
     </div>
   );
 };
