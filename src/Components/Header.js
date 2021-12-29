@@ -37,10 +37,14 @@ export default function Header() {
   return (
     <>
       <div
-        className="absolute left-0 p-1 w-10 top-0 z-10 m-3 transition-all duration-1000 transform 
+        className="absolute left-0 p-1 w-20 top-0 z-10 m-3 transition-all duration-1000 transform 
         rounded-2xl"
       >
-        <ImgOrAlt src="hfd.jpg" alt="radd" style={{ borderRadius: 20 }} />
+        <ImgOrAlt
+          src="./lograd.svg"
+          alt="Radd"
+          style={{ borderRadius: 20, color: "green" }}
+        />
       </div>
       <div className="header sticky top-0 z-10 mx-3">
         <div className="absolute top-0 m-0 mt-3 right-0">
