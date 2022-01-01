@@ -12,6 +12,9 @@ module.exports = {
       height: {
         screen90: "85vh",
       },
+      width: {
+        ch30: "35ch",
+      },
       minHeight: {
         "1/5": "3ch",
       },

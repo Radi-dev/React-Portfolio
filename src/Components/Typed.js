@@ -1,12 +1,22 @@
 import React, { useEffect, useState } from "react";
 import Typing from "react-typing-animation";
 
-let data = ["a software developer.", "an illustrator.", "Radi"];
+let data = [
+  "Python",
+  "Javascript",
+  "React js",
+  "Django",
+  "Node js",
+  "MongoDB",
+  "Arduino",
+  "Git",
+  "...",
+];
 data = data.concat(data.concat(data));
 
 const Type = () => (
   <div className="typing">
-    <span>$. I am </span>
+    <span className="p-2"> Skills: ~$</span>
     <Typing hideCursor={true} loop={true} className="inline">
       {data.map((data, i) => {
         return (
@@ -57,10 +67,10 @@ function randColor() {
 export const TypingAnim = () => {
   return (
     <div
-      className=" h-16 m-2 p-3 shadow-xl rounded overflow-hidden
-     absolute inset-x-px md:max-w-sm top-1/4"
+      className=" h-16 m-2 mx-auto w-ch30 max-w-full p-3 shadow-xl rounded overflow-hidden
+     relative"
     >
-      <div className="absolute bg-white h-1/5 rounde d-t inset-x-0 top-0">
+      <div className="absolute bg-white h-1/5 inset-x-0 top-0">
         {["red", "yellow", "green"].map((color, i) => (
           <div
             className={` bg-${color}-400 w-1.5 h-1.5 rounded-full float-left ml-1 mt-0.5`}
@@ -68,7 +78,7 @@ export const TypingAnim = () => {
         ))}
       </div>
       <div
-        className="se c bg-transparen t bg-gray-900 text-left 
+        className=" bg-gray-900 text-left 
      text-gray-200 font-mono break-all text-xl absolute inset-x-0 h-full"
       >
         <Type />

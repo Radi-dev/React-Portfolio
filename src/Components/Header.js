@@ -6,6 +6,8 @@ import { Link, BrowserRouter as Router } from "react-router-dom";
 import { HashLink as Link2 } from "react-router-hash-link";
 import { ScrollPosition } from "./scroll";
 import ImgOrAlt from "./ImgOrAlt";
+import { Logo } from "./logo";
+import { Menu } from "./menu";
 
 // custom Hook
 function OnClickOutside(ref, handler) {
@@ -36,14 +38,11 @@ export default function Header() {
 
   return (
     <>
-      <div
-        className="absolute left-0 p-1 w-20 top-0 z-10 m-3 transition-all duration-1000 transform 
-        rounded-2xl"
-      >
-        <ImgOrAlt
-          src="./lograd.svg"
-          alt="Radd"
-          style={{ borderRadius: 20, color: "green" }}
+      <div className="">
+        <Logo
+          stroke="black"
+          className="absolute left-0 top-0 z-10 transition-all pt-4 duration-1000 
+        rounded-2xl bg-g ray-300 stroke-current text-red-900 w-2/12 sm:w-1/12"
         />
       </div>
       <div className="header sticky top-0 z-10 mx-3">
@@ -54,17 +53,17 @@ export default function Header() {
                 scrollPosition > 50
                   ? "bg-gray-200 scale-75 shadow-lg"
                   : "bg-transparent"
-              } lg:hidden transform hover:scale-110 transition-all ease-in-out p-4 box-border cursor-pointer opacity-70 absolute mr-1 right-0 w-14 h-14  rounded-full `}
+              } lg:hidden transform transition-all ease-in-out box-border cursor-pointer opacity-70 absolute p-1 px-2 md:p-2 right-0 w-12 h-12  rounded-full `}
               onClick={menuClick}
             >
-              <ImgOrAlt src="./menu-icon.png" alt="Menu" />
+              <ImgOrAlt src="./menu.svg" alt="Menu" />
             </div>
             <div
               className={`${
                 scrollPosition > 50
                   ? "bg-orange-100 p-2 shadow-lg"
                   : "bg-transparent"
-              }  rounded-xl transition-all ease-in-out lg:flex hidden`}
+              }  rounded-xl transition-all pt-4 ease-in-out lg:flex hidden`}
             >
               <ul className=" lg:flex gap-4">
                 {NavData.map((val, i) => (
