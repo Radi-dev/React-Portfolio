@@ -1,10 +1,9 @@
-import React, { useState, useEffect, useRef } from "react";
+import React, { useState } from "react";
 import { HashLink as Link2 } from "react-router-hash-link";
 import ShowOnScroll from "./ShowOnScroll";
 
 function Setup() {
   const [openModal, setOpenModal] = useState(false);
-  const ref = useRef();
   const setupClick = () => setOpenModal(!openModal);
   const closeClick = () => setOpenModal(false);
 
@@ -48,7 +47,7 @@ function Setup() {
 
       <Link2 smooth to="#home">
         <ShowOnScroll checkTop={true}>
-          <div className="fixed z-20 w-12 h-12 p-1 delay-1000 transition opacity-50 duration-1000 text-xl bottom-10 right-10 bg-gray-500 rounded-full">
+          <div className="fixed z-20 w-12 h-12 p-1 delay-1000 transition opacity-50 duration-1000 text-xl bottom-10 right-10 items-center  bg-sec rounded-full">
             <p>Top</p>
           </div>
         </ShowOnScroll>

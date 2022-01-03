@@ -58,6 +58,13 @@ export const Title = ({ text }) => {
 
   let timeout = null;
   const [isScrolling, setIsScrolling] = useState(false);
+  const clickHandler = () => {
+    setTitleText("");
+
+    timeout = setTimeout(() => {
+      setTitleText(text);
+    }, 1000);
+  };
   const onScroll = () => {
     clearTimeout(timeout);
     if (!isScrolling) {
@@ -69,9 +76,8 @@ export const Title = ({ text }) => {
     }, 50);
   };
   ScrollPosition(onScroll);
-  console.log(titleText);
   return (
-    <div className="">
+    <div className="" onClick={clickHandler}>
       {titleText === text
         ? title.map((letter, i) => (
             <span className=" transform hover:scale-150 transition-all" key={i}>
@@ -80,9 +86,9 @@ export const Title = ({ text }) => {
           ))
         : title.map((letter, i) =>
             letter === " " ? (
-              <span> </span>
+              <span key={i}> </span>
             ) : (
-              <span>
+              <span key={i}>
                 {greekAlpha[Math.floor(Math.random() * greekAlpha.length)]}
               </span>
             )

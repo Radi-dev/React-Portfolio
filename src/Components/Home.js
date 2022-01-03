@@ -59,32 +59,38 @@ const Image = () => {
 export default function Home(d) {
   return (
     <>
-      <div className="wrapper sn h-screen mt-0 mb-20 pb-5 " id={d.id}>
-        <div className="card home ">
-          <div className=" absolute w- full m d:w-5/12 p-1.5 w-ch30 max-w-full ">
-            <div className="mb-12  text-center">
-              <p>
-                <h1 className=" text-black font-Shadows font-bold text-5xl ">
-                  I am Radi.
+      <div className="wrapper h-screen mt-0 " id={d.id}>
+        <div className=" home card">
+          <div className="grid place-items-center absolute p-1.5 w-ch30 md:w-3/5 max-w-full md:h-1/2 ">
+            <div className="md:absolute md:left-0 md:w-2/5 p-1 md:pr-4 ">
+              <div className=" mb-2 text-center md:text-right">
+                <h1>
+                  <p className=" text-black font-Shadows font-bold text-5xl ">
+                    I am Radi.
+                  </p>
                 </h1>
-              </p>
-              <p>
+              </div>
+              <div className=" mb-12 md:m-0  text-center md:text-right">
                 <Title text="Software developer." />
-              </p>
-              <p>
-                <small className=" inline-flex gap-2">
-                  <i>
-                    <Title text="2D/3D illustrator." />
-                  </i>
-                  😜
-                </small>
-              </p>
+                <div>
+                  <small className=" inline-flex gap-2">
+                    <i>
+                      <Title text="2D/3D illustrator." />
+                    </i>
+                    😜
+                  </small>
+                </div>
+              </div>
             </div>
-            <TypingAnim />
-            <Image />
-            <div className="flex justify-between mx-auto w-full py-1 text-sec">
-              <div className="button ">Portfolio</div>
-              <div className="button ">Contact me</div>
+            <div className=" md:absolute right-0 w-full md:w-3/5 max-w-full">
+              <div className=" md:abso lute left-0 md:w-full md:max-w-max ">
+                <TypingAnim />
+                <Image />
+                <div className=" bottom-0 flex justify-between mx-auto w-full py-1 text-sec">
+                  <div className="button ">Portfolio</div>
+                  <div className="button ">Contact me</div>
+                </div>
+              </div>
             </div>
           </div>
         </div>

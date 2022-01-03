@@ -10,10 +10,11 @@ module.exports = {
   theme: {
     extend: {
       height: {
-        screen90: "85vh",
+        screen90: "80vh",
       },
       width: {
         ch30: "35ch",
+        ch25: "25ch",
       },
       minHeight: {
         "1/5": "3ch",
