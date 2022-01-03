@@ -1,4 +1,6 @@
-import { useEffect, useState } from "react";
+import { useState } from "react";
+import { ScrollPosition } from "./scroll";
+
 export const Title = ({ text }) => {
   const greekAlpha = [
     "Α",
@@ -51,24 +53,28 @@ export const Title = ({ text }) => {
     "Ω",
     "ω",
   ];
-  const [titleText, setTitleText] = useState(null);
+  const [titleText, setTitleText] = useState(text);
   const title = text.split("");
-  useEffect(() => {
-    setTimeout(() => setTitleText(text), 800);
 
-    return () => {
-      clearTimeout();
-    };
-  });
-
+  let timeout = null;
+  const [isScrolling, setIsScrolling] = useState(false);
+  const onScroll = () => {
+    clearTimeout(timeout);
+    if (!isScrolling) {
+      setTitleText("");
+    }
+    timeout = setTimeout(() => {
+      setIsScrolling(true);
+      setTitleText(text);
+    }, 50);
+  };
+  ScrollPosition(onScroll);
+  console.log(titleText);
   return (
     <div className="">
-      {titleText
+      {titleText === text
         ? title.map((letter, i) => (
-            <span
-              className=" transform hover:scale-150 transition-all de lay-500"
-              key={i}
-            >
+            <span className=" transform hover:scale-150 transition-all" key={i}>
               {letter}
             </span>
           ))
@@ -84,31 +90,3 @@ export const Title = ({ text }) => {
     </div>
   );
 };
-
-/*import { useState } from "react";
-
-import { ScrollPosition } from "./scroll";
-
-const ScrollToTop = (params) => {
-  let timeout = null;
-  const [isScrolling, setIsScrolling] = useState(false);
-  const onScroll = () => {
-    clearTimeout(timeout);
-    //const scrolling = isScrolling;
-    !isScrolling ? setIsScrolling(true) : console.log();
-    timeout = setTimeout(() => {
-      setIsScrolling(false);
-    }, 3000);
-  };
-
-  ScrollPosition(onScroll);
-  let top = ScrollPosition() > 700;
-
-  return (
-    <div className={` ${!isScrolling || !top ? "hidden" : ""} `}>
-      <p>Top</p>
-    </div>
-  );
-};
-
-export default ScrollToTop;*/
