@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useRef } from "react";
 import { HashLink as Link2 } from "react-router-hash-link";
-import ScrollToTop from "./ScrollToTop";
+import ShowOnScroll from "./ShowOnScroll";
 
 function Setup() {
   const [openModal, setOpenModal] = useState(false);
@@ -8,16 +8,6 @@ function Setup() {
   const setupClick = () => setOpenModal(!openModal);
   const closeClick = () => setOpenModal(false);
 
-  /* useEffect(() => {
-    console.log(toTop);
-    if (scrollPosition > 200 && toTop) setToTop(false);
-    console.log(toTop);
-    setTimeout(() => setToTop(true), 2000);
-    console.log(toTop);
-    return () => {
-      clearTimeout();
-    };
-  }, [toTop, scrollPosition]);*/
   const themeModalJsx = (
     <>
       {" "}
@@ -32,12 +22,14 @@ function Setup() {
   );
   return (
     <>
-      <div
-        className="sec shadow-lg fixed hover:scale-110 cursor-pointer transform -rotate-90 rounded-3xl px-3 py-1 z-20 bottom-1/4 left-1  bg-gray-1 00 text-xs text-gray-300"
-        onClick={setupClick}
-      >
-        <p>Theme</p>
-      </div>
+      <ShowOnScroll>
+        <div
+          className="button se c shadow-lg fixed hover:scale-110 cursor-pointer transform -rotate-90 rounded-lg px-3 py-1 z-20 bottom-1/4 left-1  bg-gray-50 text-xs text-gray-600"
+          onClick={setupClick}
+        >
+          <p>Theme</p>
+        </div>
+      </ShowOnScroll>
       {openModal ? (
         <div
           className="theme-modal bg-white bottom-0 md:bottom-1/4 
@@ -55,7 +47,11 @@ function Setup() {
       )}
 
       <Link2 smooth to="#home">
-        <ScrollToTop />
+        <ShowOnScroll checkTop={true}>
+          <div className="fixed z-20 w-12 h-12 p-1 delay-1000 transition opacity-50 duration-1000 text-xl bottom-10 right-10 bg-gray-500 rounded-full">
+            <p>Top</p>
+          </div>
+        </ShowOnScroll>
       </Link2>
     </>
   );

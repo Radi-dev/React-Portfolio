@@ -1,23 +1,23 @@
 export const NavData = [
   {
-    title: "RADI",
+    title: "Radi",
     link: "#home",
     index: true,
   },
   {
-    title: "PROJECTS",
+    title: "Projects",
     link: "#projects",
   },
   {
-    title: "ABOUT",
+    title: "About",
     link: "#about",
   },
   {
-    title: "CONTACT",
+    title: "Contact",
     link: "#contact",
   },
   {
-    title: "BLOG",
+    title: "Blog",
     link: "blog",
   },
 ];

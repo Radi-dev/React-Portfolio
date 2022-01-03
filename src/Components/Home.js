@@ -51,7 +51,7 @@ const Image = () => {
     <div
       className={`transform mx-auto transition-all rounded-md shadow-xl duration-700 ease-linear overflow-hidden w-1/3 md:w-1/4 lg:w-40 h -40 ${shape}`}
     >
-      <ImgOrAlt src="head.jpg" alt="Head" />
+      <ImgOrAlt src="head.jpg" alt="Head" className="hidden" />
     </div>
   );
 };
@@ -60,23 +60,32 @@ export default function Home(d) {
   return (
     <>
       <div className="wrapper sn h-screen mt-0 mb-20 pb-5 " id={d.id}>
-        <div className="card home grid place-items-center absolute w-full h-screen90 shadow-2xl text-gray-600 bg-yellow-300 rounded-t-3xl rounded-b ">
-          <div className=" absolute inset-x-auto w-full md:w-5/12 top-24 p-1.5 ">
+        <div className="card home ">
+          <div className=" absolute w- full m d:w-5/12 p-1.5 w-ch30 max-w-full ">
             <div className="mb-12  text-center">
               <p>
-                <b>
-                  <Title text="Radi ist Meister" />
-                </b>
+                <h1 className=" text-black font-Shadows font-bold text-5xl ">
+                  I am Radi.
+                </h1>
               </p>
-              <p>Software developer. </p>
               <p>
-                <small>
-                  <i>Illustrator. </i>😜
+                <Title text="Software developer." />
+              </p>
+              <p>
+                <small className=" inline-flex gap-2">
+                  <i>
+                    <Title text="2D/3D illustrator." />
+                  </i>
+                  😜
                 </small>
               </p>
             </div>
             <TypingAnim />
             <Image />
+            <div className="flex justify-between mx-auto w-full py-1 text-sec">
+              <div className="button ">Portfolio</div>
+              <div className="button ">Contact me</div>
+            </div>
           </div>
         </div>
       </div>

@@ -12,7 +12,10 @@ import { Routes, Route, BrowserRouter as Router } from "react-router-dom";
 
 export default function App() {
   const pagejsx = (
-    <div className="mother h-full font-Monte  bg-bl ue-200 px-5 py-12" id="top">
+    <div
+      className="mother ho me bg-gradient-to-t from-prim2Dark to-prim2 bg-fixed h-full font-Comfortaa  bg-bl ue-200 px-5 py-12"
+      id="top"
+    >
       <div className="page-conatainer h-full mx-auto w-full relative overflow-y- scroll snap snap-y snap-mandatory">
         <Header />
         <Setup />

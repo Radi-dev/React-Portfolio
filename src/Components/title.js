@@ -66,7 +66,7 @@ export const Title = ({ text }) => {
       {titleText
         ? title.map((letter, i) => (
             <span
-              className=" transform hover:scale-150 transition-all delay-500"
+              className=" transform hover:scale-150 transition-all de lay-500"
               key={i}
             >
               {letter}
@@ -84,3 +84,31 @@ export const Title = ({ text }) => {
     </div>
   );
 };
+
+/*import { useState } from "react";
+
+import { ScrollPosition } from "./scroll";
+
+const ScrollToTop = (params) => {
+  let timeout = null;
+  const [isScrolling, setIsScrolling] = useState(false);
+  const onScroll = () => {
+    clearTimeout(timeout);
+    //const scrolling = isScrolling;
+    !isScrolling ? setIsScrolling(true) : console.log();
+    timeout = setTimeout(() => {
+      setIsScrolling(false);
+    }, 3000);
+  };
+
+  ScrollPosition(onScroll);
+  let top = ScrollPosition() > 700;
+
+  return (
+    <div className={` ${!isScrolling || !top ? "hidden" : ""} `}>
+      <p>Top</p>
+    </div>
+  );
+};
+
+export default ScrollToTop;*/

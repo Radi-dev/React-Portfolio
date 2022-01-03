@@ -40,9 +40,9 @@ export default function Header() {
     <>
       <div className="">
         <Logo
-          stroke="black"
+          stroke=""
           className="absolute left-0 top-0 z-10 transition-all pt-4 duration-1000 
-        rounded-2xl bg-g ray-300 stroke-current text-red-900 w-2/12 sm:w-1/12"
+        rounded-2xl bg-g ray-300 stroke-current text-black w-2/12 sm:w-1/12"
         />
       </div>
       <div className="header sticky top-0 z-10 mx-3">
@@ -56,12 +56,12 @@ export default function Header() {
               } lg:hidden transform transition-all ease-in-out box-border cursor-pointer opacity-70 absolute p-1 px-2 md:p-2 right-0 w-12 h-12  rounded-full `}
               onClick={menuClick}
             >
-              <ImgOrAlt src="./menu.svg" alt="Menu" />
+              <Menu />
             </div>
             <div
               className={`${
                 scrollPosition > 50
-                  ? "bg-orange-100 p-2 shadow-lg"
+                  ? "bg-prim2 p-2 shadow-lg"
                   : "bg-transparent"
               }  rounded-xl transition-all pt-4 ease-in-out lg:flex hidden`}
             >

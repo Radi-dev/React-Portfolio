@@ -1,7 +1,7 @@
-export const Logo = ({ stroke = "black", ...props }) => {
+export const Logo = ({ stroke = "black", fill = "none", ...props }) => {
   let strokeColor = stroke;
   let strokeWidth = "5.5";
-  let fillColor = "none";
+  let fillColor = fill;
 
   return (
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 399 420" {...props}>

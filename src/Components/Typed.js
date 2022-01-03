@@ -10,18 +10,20 @@ let data = [
   "MongoDB",
   "Arduino",
   "Git",
+  "Photoshop",
+  "Blender 3d",
   "...",
 ];
 data = data.concat(data.concat(data));
 
 const Type = () => (
   <div className="typing">
-    <span className="p-2"> Skills: ~$</span>
+    <span className="p-2 text-gray-400"> Skills: ~$</span>
     <Typing hideCursor={true} loop={true} className="inline">
       {data.map((data, i) => {
         return (
           <span key={i}>
-            <span className={" text-" + randColor() + "-300"}>{data}</span>
+            <span className={" text-" + randColor() + "-200"}>{data}</span>
             <Typing.Delay ms={1000} />
             <Typing.Backspace count={data.length} />
           </span>
@@ -67,7 +69,7 @@ function randColor() {
 export const TypingAnim = () => {
   return (
     <div
-      className=" h-16 m-2 mx-auto w-ch30 max-w-full p-3 shadow-xl rounded overflow-hidden
+      className=" h-16 mx-auto w-full p-3 shadow-xl rounded overflow-hidden
      relative"
     >
       <div className="absolute bg-white h-1/5 inset-x-0 top-0">
@@ -78,7 +80,7 @@ export const TypingAnim = () => {
         ))}
       </div>
       <div
-        className=" bg-gray-900 text-left 
+        className=" bg-gray-900 back text-left 
      text-gray-200 font-mono break-all text-xl absolute inset-x-0 h-full"
       >
         <Type />

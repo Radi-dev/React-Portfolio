@@ -2,7 +2,12 @@ import { useState } from "react";
 
 import { ScrollPosition } from "./scroll";
 
-const ScrollToTop = (params) => {
+const ShowOnScroll = ({
+  checkTop = null,
+  delay = 3000,
+  topPosition = 700,
+  ...props
+}) => {
   let timeout = null;
   const [isScrolling, setIsScrolling] = useState(false);
   const onScroll = () => {
@@ -11,21 +16,19 @@ const ScrollToTop = (params) => {
     !isScrolling ? setIsScrolling(true) : console.log();
     timeout = setTimeout(() => {
       setIsScrolling(false);
-    }, 3000);
+    }, delay);
   };
 
   ScrollPosition(onScroll);
-  let top = ScrollPosition() > 700;
+  let top = ScrollPosition() > topPosition;
 
-  return (
-    <div
-      className={` ${
-        !isScrolling || !top ? "hidden" : ""
-      } fixed z-20 w-12 h-12 p-1 delay-1000 transition opacity-50 duration-1000 text-xl bottom-10 right-10 bg-gray-500 rounded-full`}
-    >
-      <p>Top</p>
+  return checkTop ? (
+    <div className={` ${!isScrolling || !top ? "hidden" : ""} `}>
+      {props.children}
     </div>
+  ) : (
+    <div className={` ${!isScrolling ? "hidden" : ""} `}>{props.children}</div>
   );
 };
 
-export default ScrollToTop;
+export default ShowOnScroll;
