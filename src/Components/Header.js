@@ -37,13 +37,11 @@ export default function Header() {
 
   return (
     <>
-      <div className="">
-        <Logo
-          stroke=""
-          className="absolute left-0 top-0 z-10 transition-all pt-4 duration-1000 
-        rounded-2xl bg-g ray-300 stroke-current text-black w-2/12 sm:w-1/12"
-        />
-      </div>
+      <Logo
+        stroke=""
+        className="absolute left-0 top-0 z-10 transition-all pt-4 duration-1000 
+        rounded-2xl bg-g ray-300 stroke-current text-black w-2/12 md:w-14 sm:w-1/12"
+      />
       <div className="header sticky top-0 z-10 mx-3">
         <div className="absolute top-0 m-0 mt-3 right-0">
           <div className="p-1 w-max rounded-md ">
