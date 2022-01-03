@@ -81,7 +81,7 @@ export const TypingAnim = () => {
         ))}
       </div>
       <div
-        className=" bg-sec back text-left 
+        className=" bg-gray-700 back text-left 
      text-gray-200 font-mono break-all text-xl absolute inset-x-0 h-full"
       >
         <Type />
