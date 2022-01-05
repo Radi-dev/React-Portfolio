@@ -23,7 +23,7 @@ const Type = () => (
       {data.map((data, i) => {
         return (
           <span key={i}>
-            <span className={" text-" + randColor() + "-200"}>{data}</span>
+            <span className={randColor()}>{data}</span>
             <Typing.Delay ms={1000} />
             <Typing.Backspace count={data.length} />
           </span>
@@ -63,7 +63,7 @@ const Type2 = (text) => {
 
 function randColor() {
   const colors = ["green", "yellow", "red", "blue"];
-  return colors[Math.floor(Math.random() * colors.length)];
+  return " text-" + colors[Math.floor(Math.random() * colors.length)] + "-200";
 }
 
 export const TypingAnim = () => {
