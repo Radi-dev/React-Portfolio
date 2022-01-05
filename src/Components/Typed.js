@@ -23,7 +23,7 @@ const Type = () => (
       {data.map((data, i) => {
         return (
           <span key={i}>
-            <span className={randColor()}>{data}</span>
+            <span style={{ color: randColor() }}>{data}</span>
             <Typing.Delay ms={1000} />
             <Typing.Backspace count={data.length} />
           </span>
@@ -62,23 +62,31 @@ const Type2 = (text) => {
 };
 
 function randColor() {
-  const colors = ["green", "yellow", "red", "blue"];
-  return " text-" + colors[Math.floor(Math.random() * colors.length)] + "-200";
+  const colors = [
+    "rgb(167, 243, 208)",
+    "rgb(253, 230, 138)",
+    "rgb(254, 202, 202)",
+    "rgb(191, 219, 254)",
+  ];
+  return colors[Math.floor(Math.random() * colors.length)];
 }
 
 export const TypingAnim = () => {
   return (
     <div
-      className=" h-16 mx-auto w-full md:w-ch30 max-w-full p-3 shadow-xl rounded overflow-hidden
+      className=" h-16 mx-auto  w-full md:w-ch30 max-w-full p-3 shadow-xl rounded overflow-hidden
      relative"
     >
       <div className="absolute bg-white h-1/5 inset-x-0 top-0">
-        {["red", "yellow", "green"].map((color, i) => (
-          <div
-            className={` bg-${color}-400 w-1.5 h-1.5 rounded-full float-left ml-1 mt-0.5`}
-            key={i}
-          ></div>
-        ))}
+        {["rgb(248, 113, 113)", "rgb(251, 191, 36)", "rgb(52, 211, 153)"].map(
+          (color, i) => (
+            <div
+              className="w-1.5 h-1.5 rounded-full float-left ml-1 mt-0.5"
+              style={{ backgroundColor: color }}
+              key={i}
+            ></div>
+          )
+        )}
       </div>
       <div
         className=" bg-gray-700 back text-left 
