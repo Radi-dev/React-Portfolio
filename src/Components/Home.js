@@ -87,7 +87,7 @@ export default function Home(d) {
                 <TypingAnim />
                 <Image />
                 <div className=" bottom-0 flex justify-between mx-auto w-full py-1 text-sec">
-                  <div className="button ">Portfolio</div>
+                  <div className="button border-sec ">Portfolio</div>
                   <div className="button ">Contact me</div>
                 </div>
               </div>
