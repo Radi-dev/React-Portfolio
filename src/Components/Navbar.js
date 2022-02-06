@@ -1,6 +1,6 @@
 import React from "react";
 import { NavData } from "./NavData";
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import { HashLink as Link2 } from "react-router-hash-link";
 
 function Navbar({ action }) {
@@ -19,9 +19,9 @@ function Navbar({ action }) {
                   </Link2>
                 ))
               : (link = (
-                  <Link to={val.link} onClick={action}>
+                  <NavLink to={val.link} onClick={action}>
                     {val.title}
-                  </Link>
+                  </NavLink>
                 ))}
           </li>
         ))}
