@@ -1,6 +1,5 @@
 module.exports = {
   content: ["./src/**/*.{js,jsx,ts,tsx}"],
-  darkMode: false, // or 'media' or 'class'
   theme: {
     extend: {
       height: {
@@ -32,9 +31,6 @@ module.exports = {
         fawn: "#d4a373ff",
       },
     },
-  },
-  variants: {
-    extend: {},
   },
   plugins: [],
 };

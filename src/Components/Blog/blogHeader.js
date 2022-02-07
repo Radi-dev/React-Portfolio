@@ -1,12 +1,12 @@
 import React, { useState, useEffect, useRef } from "react";
 
-import Navbar from "./Navbar";
-import { NavData } from "./NavData";
+import Navbar from "../Navbar";
+import { NavData } from "../NavData";
 import { Link } from "react-router-dom";
 import { HashLink as Link2 } from "react-router-hash-link";
-import { ScrollPosition } from "./scroll";
-import { Logo } from "./logo";
-import { Menu } from "./menu";
+import { ScrollPosition } from "../scroll";
+import { Logo } from "../logo";
+import { Menu } from "../menu";
 
 // custom Hook
 function OnClickOutside(ref, handler) {
@@ -36,7 +36,7 @@ export default function Header() {
   let scrollPosition = ScrollPosition();
 
   return (
-    <>
+    <section className=" ">
       <Link to={"/"}>
         <Logo
           stroke=""
@@ -93,6 +93,6 @@ export default function Header() {
           </div>
         )}
       </div>
-    </>
+    </section>
   );
 }

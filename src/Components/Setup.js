@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import { HashLink as Link2 } from "react-router-hash-link";
 import ShowOnScroll from "./ShowOnScroll";
+import Fade from "react-reveal/Fade";
+import { SocialLinks } from "./NavData";
 
 function Setup() {
   const [openModal, setOpenModal] = useState(false);
@@ -22,12 +24,24 @@ function Setup() {
   return (
     <>
       <ShowOnScroll>
-        <div
-          className="button se c shadow-lg fixed hover:scale-110 cursor-pointer transform -rotate-90 rounded-lg px-3 py-1 z-20 bottom-1/4 left-1  bg-gray-50 text-xs text-gray-600"
-          onClick={setupClick}
-        >
-          <p>Theme</p>
-        </div>
+        <Fade left cascade>
+          <div className="bor der grid gap-5 shad ow-lg fixed cursor-pointer transform rounded-lg px-3 py-1 z-20 bottom-1/4 left-2  ">
+            {SocialLinks.map((social, i) => (
+              <a key={i} href={social.url} target="_blank" rel="noreferrer">
+                <div className="butt on sh adow-lg  hover:scale-110 cursor-pointer  rounded-lg px-3 py-1 z-20 bottom-1/4 left-1  bg -gray-50 text-xs text-gray-600">
+                  <div className=" h-6 ">{social.icon}</div>
+                </div>
+              </a>
+            ))}
+
+            <div
+              className="butt on sha dow-lg  hover:scale-110 cursor-pointer  rounded-lg px-3 py-1 z-20 bottom-1/4 left-1  bg -gray-50 text-xs text-gray-600"
+              onClick={setupClick}
+            >
+              <img alt="" src="setting.svg" className=" h-6 " />
+            </div>
+          </div>
+        </Fade>
       </ShowOnScroll>
       {openModal ? (
         <div
@@ -47,9 +61,11 @@ function Setup() {
 
       <Link2 smooth to="#home">
         <ShowOnScroll checkTop={true}>
-          <div className="fixed z-20 w-12 h-12 p-1 delay-1000 transition opacity-50 duration-1000 text-xl bottom-10 right-10 items-center  bg-sec rounded-full">
-            <p>Top</p>
-          </div>
+          <Fade bottom>
+            <div className="fixed z-20 w-12 h-12 p-1 delay-1000 transition opacity-50 duration-1000 text-xl bottom-10 right-10 items-center  bg-sec rounded-full">
+              <p>Top</p>
+            </div>
+          </Fade>
         </ShowOnScroll>
       </Link2>
     </>

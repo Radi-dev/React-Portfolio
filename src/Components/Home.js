@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import { TypingAnim } from "./Typed";
 import ImgOrAlt from "./ImgOrAlt";
 import { Title } from "./title";
+import Fade from "react-reveal/Fade";
 
 const Image = () => {
   const [shape, setShape] = useState("rounded");
@@ -61,38 +62,41 @@ export default function Home(d) {
     <>
       <div className="wrapper h-screen mt-0 " id={d.id}>
         <div className=" home card">
-          <div className="grid place-items-center absolute p-1.5 w-ch30 md:w-3/5 max-w-full md:h-1/2 ">
-            <div className="md:absolute md:left-0 md:w-2/5 p-1 md:pr-4 ">
-              <div className=" mb-2 text-center md:text-right">
-                <h1>
-                  <p className=" text-black font-Shadows font-bold text-5xl ">
-                    I am Radi.
-                  </p>
-                </h1>
+          <Fade bottom cascade>
+            <div className="grid place-items-center absolute p-1.5 w-ch30 md:w-3/5 max-w-full md:h-1/2 ">
+              {" "}
+              <div className="md:absolute md:left-0 md:w-2/5 p-1 md:pr-4 ">
+                <div className=" mb-2 text-center md:text-right">
+                  <h1>
+                    <p className=" text-black font-Shadows font-bold text-5xl ">
+                      I am Radi.
+                    </p>
+                  </h1>
+                </div>
+                <div className=" mb-12 md:m-0  text-center md:text-right">
+                  <Title text="Software developer." />
+                  <div>
+                    <small className=" inline-flex gap-2">
+                      <i>
+                        <Title text="2D/3D illustrator." />
+                      </i>
+                      😜
+                    </small>
+                  </div>
+                </div>
               </div>
-              <div className=" mb-12 md:m-0  text-center md:text-right">
-                <Title text="Software developer." />
-                <div>
-                  <small className=" inline-flex gap-2">
-                    <i>
-                      <Title text="2D/3D illustrator." />
-                    </i>
-                    😜
-                  </small>
+              <div className=" md:absolute right-0 w-full md:w-3/5 max-w-full">
+                <div className=" md:abso lute left-0 md:w-full md:max-w-max ">
+                  <TypingAnim />
+                  <Image />
+                  <div className=" bottom-0 flex justify-between mx-auto w-full py-1 text-sec">
+                    <div className="button border-sec ">Portfolio</div>
+                    <div className="button ">Contact me</div>
+                  </div>
                 </div>
               </div>
             </div>
-            <div className=" md:absolute right-0 w-full md:w-3/5 max-w-full">
-              <div className=" md:abso lute left-0 md:w-full md:max-w-max ">
-                <TypingAnim />
-                <Image />
-                <div className=" bottom-0 flex justify-between mx-auto w-full py-1 text-sec">
-                  <div className="button border-sec ">Portfolio</div>
-                  <div className="button ">Contact me</div>
-                </div>
-              </div>
-            </div>
-          </div>
+          </Fade>
         </div>
       </div>
     </>

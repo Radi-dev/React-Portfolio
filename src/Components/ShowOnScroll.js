@@ -22,13 +22,13 @@ const ShowOnScroll = ({
   ScrollPosition(onScroll);
   let top = ScrollPosition() > topPosition;
 
-  return checkTop ? (
-    <div className={` ${!isScrolling || !top ? "hidden" : ""} `}>
-      {props.children}
-    </div>
-  ) : (
-    <div className={` ${!isScrolling ? "hidden" : ""} `}>{props.children}</div>
-  );
+  return checkTop
+    ? !isScrolling || !top
+      ? ""
+      : props.children
+    : isScrolling
+    ? props.children
+    : "";
 };
 
 export default ShowOnScroll;
