@@ -1,4 +1,6 @@
 import { SocialLinks, NavData } from "./NavData";
+import { Link } from "react-router-dom";
+import { HashLink as Link2 } from "react-router-hash-link";
 
 export default function Footer({ navD }) {
   const NavDat = navD ? navD : NavData;
@@ -9,12 +11,22 @@ export default function Footer({ navD }) {
           <nav class="flex flex-wrap just ify-center -mx-5 -my-2">
             {NavDat.map((nav, i) => (
               <div key={i} class="px-5 py-2">
-                <a
-                  href={nav.link}
-                  class="text-base leading-6 text-gray-500 hover:text-indigo-500"
-                >
-                  {nav.title}
-                </a>
+                {nav.link[0] === "#" ? (
+                  <Link2
+                    smooth={"true"}
+                    to={nav.link}
+                    class="text-base leading-6 text-gray-500 hover:text-indigo-500"
+                  >
+                    {nav.title}
+                  </Link2>
+                ) : (
+                  <Link
+                    to={nav.link}
+                    class="text-base leading-6 text-gray-500 hover:text-indigo-500"
+                  >
+                    {nav.title}
+                  </Link>
+                )}
               </div>
             ))}
           </nav>
