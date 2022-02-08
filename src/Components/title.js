@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { ScrollPosition } from "./scroll";
 
 export const Title = ({ text }) => {
@@ -57,7 +57,7 @@ export const Title = ({ text }) => {
   const title = text.split("");
 
   let timeout = null;
-  const [isScrolling, setIsScrolling] = useState(false);
+
   const clickHandler = () => {
     setTitleText("");
 
@@ -67,17 +67,14 @@ export const Title = ({ text }) => {
   };
   const onScroll = () => {
     clearTimeout(timeout);
-    if (!isScrolling) {
-      setTitleText("");
-    }
+    setTitleText("");
     timeout = setTimeout(() => {
-      setIsScrolling(true);
       setTitleText(text);
     }, 50);
   };
   ScrollPosition(onScroll);
   return (
-    <div className="" onClick={clickHandler}>
+    <span className="" onClick={clickHandler}>
       {titleText === text
         ? title.map((letter, i) => (
             <span className=" transform hover:scale-150 transition-all" key={i}>
@@ -93,6 +90,6 @@ export const Title = ({ text }) => {
               </span>
             )
           )}
-    </div>
+    </span>
   );
 };

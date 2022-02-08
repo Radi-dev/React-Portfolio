@@ -11,7 +11,9 @@ module.exports = {
       },
       minHeight: {
         "1/5": "3ch",
+        screen90: "80vh",
       },
+      maxHeight: { screen90: "80vh" },
       fontFamily: {
         Comfortaa: ["Comfortaa", "Arial", "Helvetica", "sans-serif"],
         Shadows: ["Shadows Into Light Two", "Arial", "Helvetica", "sans-serif"],

@@ -15,7 +15,7 @@
     absolute right-0 w-1/2;
   }
   .card {
-    @apply grid place-items-center absolute w-full h-screen90 shadow-2xl text-gray-600 bg-prim1 rounded-3xl;
+    @apply grid place-items-center w-full h-screen90 shadow-2xl text-gray-600 bg-prim1 rounded-3xl;
   }
   .theme-modal {
     @apply shadow-md z-20 fixed lg:rounded-b-none inset-x-0.5 md:inset-x-6 
