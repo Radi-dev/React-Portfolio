@@ -40,7 +40,7 @@ export default function Footer({ navD }) {
                 rel="noreferrer"
               >
                 <span className="sr-only">{social.name}</span>
-                {social.icon}
+                <div className="w-6 h-6">{social.iconSimple}</div>
               </a>
             ))}
           </div>

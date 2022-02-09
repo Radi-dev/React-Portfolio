@@ -4,7 +4,7 @@ import { ScrollPosition } from "./scroll";
 
 const ShowOnScroll = ({
   checkTop = null,
-  delay = 3000,
+  delay = 5000,
   topPosition = 700,
   ...props
 }) => {
