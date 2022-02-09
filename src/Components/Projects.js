@@ -175,7 +175,7 @@ export default function Projects() {
                                       target={"_blank"}
                                       rel="noreferrer"
                                     >
-                                      View demo
+                                      Demo
                                     </a>
                                   </span>
                                 </>
@@ -190,7 +190,7 @@ export default function Projects() {
                                       target={"_blank"}
                                       rel="noreferrer"
                                     >
-                                      View live project
+                                      Live project
                                     </a>
                                   </span>
                                 </>
