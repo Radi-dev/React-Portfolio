@@ -5,10 +5,10 @@ import { HashLink as Link2 } from "react-router-hash-link";
 export default function Footer({ navD }) {
   const NavDat = navD ? navD : NavData;
   return (
-    <div className="card p-0 relative rounded-t-md mt-5 h-72 md:h-52 lg:h-48  overflow-y-hidden bottom-0 bg-prim2">
-      <section className="bg-gray-900 absolute inset-0 top-0 ">
-        <div className="max-w-screen-xl px-4 py-12 mx-auto space-y-8 overflow-hidden sm:px-6 lg:px-8">
-          <nav className="flex flex-wrap just ify-center -mx-5 -my-2">
+    <div className="card p-0 relative rounded-t-md mt-5 h-60 md:h-52 lg:h-48  overflow-y-hidden bottom-0 bg-prim2">
+      <section className="bg-gra y-900 bg-mygray absolute inset-0 top-0 ">
+        <div className="max-w-screen-xl px-4 py-12 mx-auto overflow-hidden sm:px-6 lg:px-8">
+          <nav className="flex flex-wrap justify-center -mx-5 -my-2">
             {NavDat.map((nav, i) => (
               <div key={i} className="px-5 py-2">
                 {nav.link[0] === "#" ? (
@@ -44,7 +44,7 @@ export default function Footer({ navD }) {
               </a>
             ))}
           </div>
-          <p className="mt-8 text-base leading-6 text-center text-gray-400">
+          <p className="mt-2 text-base leading-6 text-center text-gray-400">
             © {new Date().getFullYear()} Evaristus Anarado. All rights reserved.
           </p>
         </div>

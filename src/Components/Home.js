@@ -20,7 +20,7 @@ export default function Home(d) {
       <div className="wrapper h-screen mt-0 " id={d.id}>
         <div className=" home card">
           <Fade bottom cascade>
-            <div className="grid place-items-center absolute p-1.5 w-ch30 md:w-3/5 max-w-full md:h-1/2 ">
+            <div className="grid place-items-center absolute p-1.5 w-ch30 md:w-3/5 max-w-full">
               <div className="md:absolute md:left-0 md:w-2/5 p-1 md:pr-4 ">
                 <div className=" mb-2 text-center md:text-right">
                   <h1>

@@ -6,7 +6,7 @@ export default function BlogHome(d = "blog") {
   return (
     <div className=" card overflow-hidden bg -white h-full mx-auto w-full relative ">
       <div className="  h-full m-0 sn mt-2" id={d.id}>
-        <div className="overflow-y-scroll mt-20 h-full space-y-3 lg:bg-gray-50 border-gray-400 border z-10 rounded-lg mb-3">
+        <div className=" mt-20 h-full space-y-3 lg:bg-gray-50 border-gray-400 border z-10 rounded-lg mb-3">
           <div className="bg- gray-200 h-full w-full px-5 pt-6 pb-20 overflow-y-auto">
             <div className="mb-3">
               <h1 className="text-3xl font-bold">Today</h1>

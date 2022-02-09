@@ -4,7 +4,7 @@ import { Title } from "./title";
 export default function Contact(d) {
   return (
     <div className="card h-max py-5 mb-8" id={d.id}>
-      <div className="bg-gray-800 flex flex-col w- border max-w-full border-gray-900 rounded-lg p-6 box-border">
+      <div className="bg-mygray flex flex-col w- border max-w-full border-gray-900 rounded-lg p-6 box-border">
         <div className="text-white mt-10">
           <h1 className="font-bold text-4xl">Contact me</h1>
           <p className="font-semibold">

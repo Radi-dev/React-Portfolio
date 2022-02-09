@@ -10,6 +10,9 @@
     @apply text-gray-200;
     animation: blink 1s step-start infinite;
   }
+  .links {
+    @apply hover:scale-110;
+  }
   .navbar {
     @apply lg:hidden transform duration-300 origin-top
     absolute right-0 w-1/2;

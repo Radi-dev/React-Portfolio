@@ -25,6 +25,7 @@ module.exports = {
         prim2: "#CCD1E4",
         prim2Dark: "#a5b4fc",
         sec: "#2F3A8F",
+        mygray: "#1d1d1d",
         highl: "#FE7E6D",
         paleSpringBud: "#ccd5aeff",
         lightGoldenrodYellow: "#e9edc9ff",
