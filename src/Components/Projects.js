@@ -73,6 +73,21 @@ export default function Projects(d) {
                           )}
                         </p>
                         <div class="flex items-center justify-between mt-4">
+                          {!project.github || project.github === "#" ? (
+                            ""
+                          ) : (
+                            <>
+                              <span className="block relative text-sm">
+                                <a
+                                  href={project.github}
+                                  target={"_blank"}
+                                  rel="noreferrer"
+                                >
+                                  Git
+                                </a>
+                              </span>
+                            </>
+                          )}{" "}
                           {!project.demo || project.demo === "#" ? (
                             ""
                           ) : (
@@ -165,6 +180,21 @@ export default function Projects(d) {
                               )}
                             </p>
                             <div class="flex items-center justify-between mt-4">
+                              {!project.github || project.github === "#" ? (
+                                ""
+                              ) : (
+                                <>
+                                  <span className="block relative text-sm">
+                                    <a
+                                      href={project.github}
+                                      target={"_blank"}
+                                      rel="noreferrer"
+                                    >
+                                      Git
+                                    </a>
+                                  </span>
+                                </>
+                              )}
                               {!project.demo || project.demo === "#" ? (
                                 ""
                               ) : (
