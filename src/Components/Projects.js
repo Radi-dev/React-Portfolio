@@ -8,10 +8,12 @@ export default function Projects() {
   return (
     <div className="  h-screen mb-28 m-0 sn ">
       <div className="card h-full  absolute block p-3 overfl ow-y-clip">
-        <Title text={"Projects"} />
+        <h1 className="font-bold text-center">
+          <Title text={"Projects"} />
+        </h1>
         <Tabs>
           <TabList>
-            <div className="w-full flex-row flex overflow-x-auto overflow-y-hidden h-max inner">
+            <div className="w-full flex-row flex md:justify-center overflow-x-auto overflow-y-hidden h-max inner">
               <Tab>
                 <h1 className=" whitespace-nowrap">All Projects</h1>
               </Tab>
@@ -24,7 +26,7 @@ export default function Projects() {
           </TabList>
 
           <TabPanel>
-            <div className="All-projects overflow-y-scroll inset-x-0 absolute bottom-10 top-24 rounded p-2 shadow-inner">
+            <div className="All-projects overflow-y-auto inset-x-0 absolute bottom-10 top-24 rounded p-2 shadow-inner">
               <br />
               <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-8">
                 {projects.map((project, i) => (
@@ -32,14 +34,12 @@ export default function Projects() {
                     <img
                       alt={project.title}
                       src={project.image}
-                      class="max-h- 40 w-full object-cover absolute h-full opac ity-40 z-0"
+                      class="max-h- 40 w-full object-cover absolute h-full z-0"
                     />
+                    <div class="absolute inset-0 opacity-75 duration-200 bg-slate-900 group-hover:opacity-0 w-full p-4"></div>
                     <div className=" absolute  bottom-0 w-full p-4 group-hover:hidden bg-gradient-to-t from-mygray m-0">
                       <p class="text-papayaWhip text-xl font-medium">
                         {project.title}
-                      </p>
-                      <p class="text-prim2Dark text-xs font-medium mb-2">
-                        Read more...
                       </p>
                     </div>
                     <div className="absolute w-full block -bottom-full group-hover:bottom-0 duration-200 eas e-linear z-10 ">
@@ -48,7 +48,9 @@ export default function Projects() {
                         <div class="absolute bottom-0 h-3/4 bg-mygray w-full p-4"></div>
                       </div>
                       <div class=" w-full p-4">
-                        <p class="text-papayaWhip text-xl font-medium">Video</p>
+                        <p class="text-papayaWhip text-xl font-medium">
+                          {project.title}
+                        </p>
                         <p class="text-gray-100 font-light text-sm break-words">
                           {!project.blogPost || project.blogPost === "#" ? (
                             project.description
@@ -81,7 +83,7 @@ export default function Projects() {
                                   target={"_blank"}
                                   rel="noreferrer"
                                 >
-                                  View demo
+                                  Demo
                                 </a>
                               </span>
                             </>
@@ -96,7 +98,7 @@ export default function Projects() {
                                   target={"_blank"}
                                   rel="noreferrer"
                                 >
-                                  View live project
+                                  Live project
                                 </a>
                               </span>
                             </>
@@ -126,12 +128,10 @@ export default function Projects() {
                           src={project.image}
                           class="max-h- 40 w-full object-cover absolute h-full opac ity-40 z-0"
                         />
+                        <div class="absolute inset-0 opacity-75 duration-200 bg-slate-900 group-hover:opacity-0 w-full p-4"></div>
                         <div className=" absolute  bottom-0 w-full p-4 group-hover:hidden bg-gradient-to-t from-mygray m-0">
                           <p class="text-papayaWhip text-xl font-medium">
                             {project.title}
-                          </p>
-                          <p class="text-prim2Dark text-xs font-medium mb-2">
-                            Read more...
                           </p>
                         </div>
                         <div className="absolute w-full block -bottom-full group-hover:bottom-0 duration-200 eas e-linear z-10 ">
@@ -141,14 +141,14 @@ export default function Projects() {
                           </div>
                           <div class=" w-full p-4">
                             <p class="text-papayaWhip text-xl font-medium">
-                              Video
+                              {project.title}
                             </p>
                             <p class="text-gray-100 font-light text-sm break-words">
+                              {project.description}{" "}
                               {!project.blogPost || project.blogPost === "#" ? (
-                                project.description
+                                ""
                               ) : (
                                 <>
-                                  {project.description.slice(0, 150)}
                                   <span className="text-prim2Dark">
                                     ...
                                     <a

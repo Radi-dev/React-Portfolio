@@ -38,7 +38,7 @@ export const projects = [
       "A practice frontend A practice frontend A practice frontendvv A practice frontend A practice frontend A practice frontend A practice frontend A practice frontend v A practice frontend",
     image: "https://source.unsplash.com/pMW4jzELQCw",
     demo: "#",
-    live: "#",
+    live: "https://ositainstitute.netlify.app",
     blogPost: "#",
   },
   {
@@ -47,7 +47,7 @@ export const projects = [
     title: "Enrollment app",
     description: "An app for course enrollment",
     image: "https://source.unsplash.com/obV_LM0KjxY",
-    demo: "#",
+    demo: "https://ositainstitute.netlify.app",
     live: "#",
     blogPost: "#",
   },
