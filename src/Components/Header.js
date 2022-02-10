@@ -50,7 +50,7 @@ export default function Header() {
             <div
               className={` ${
                 scrollPosition > 50
-                  ? "bg-prim2Dark scale-75 shadow-lg"
+                  ? "bg-prim2 scale-75 shadow-lg"
                   : "bg-transparent"
               } lg:hidden transform transition-all ease-in-out box-border cursor-pointer opacity-70 absolute p-1 px-2 md:p-2 right-0 w-12 h-12  rounded-full `}
               onClick={menuClick}
@@ -60,7 +60,7 @@ export default function Header() {
             <div
               className={`${
                 scrollPosition > 50
-                  ? "bg-prim2Dark p-2 shadow-lg"
+                  ? "bg-prim2 p-2 shadow-lg"
                   : "bg-transparent"
               }  rounded-xl transition-all pt-4 ease-in-out lg:flex hidden`}
             >

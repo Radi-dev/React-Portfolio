@@ -2,6 +2,8 @@ import React, { useState, useEffect } from "react";
 import { TypingAnim } from "./Typed";
 import ImgOrAlt from "./ImgOrAlt";
 import { Title } from "./title";
+import { HashLink as Link2 } from "react-router-hash-link";
+import { NavData } from "./NavData";
 import Fade from "react-reveal/Fade";
 
 const Image = () => {
@@ -46,8 +48,18 @@ export default function Home(d) {
                   <TypingAnim />
                   <Image />
                   <div className=" bottom-0 flex justify-between mx-auto w-full py-1 text-sec">
-                    <div className="button border-sec ">Portfolio</div>
-                    <div className="button ">Contact me</div>
+                    <Link2
+                      smooth={"true"}
+                      to={NavData.find((x) => x.title === "Projects").link}
+                    >
+                      <div className="button border-sec ">Portfolio</div>
+                    </Link2>
+                    <Link2
+                      smooth={"true"}
+                      to={NavData.find((x) => x.title === "Contact").link}
+                    >
+                      <div className="button ">Contact me</div>
+                    </Link2>
                   </div>
                 </div>
               </div>

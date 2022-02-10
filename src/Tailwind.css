@@ -26,7 +26,7 @@
     rounded-t-3xl md:rounded-3xl p-10;
   }
   .button {
-    @apply p-0.5 shadow-lg rounded border border-highl text-sec ring-white ring-1 focus:ring-offset-2;
+    @apply p-0.5 shadow-lg rounded border border-highl text-sec ring-white ring-1 active:scale-105 hover:ring-offset-2;
   }
 
   .color {

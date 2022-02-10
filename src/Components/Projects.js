@@ -4,9 +4,9 @@ import { categories, techStacks, projects } from "./projectData";
 import { Title } from "./title";
 import "react-tabs/style/react-tabs.css";
 
-export default function Projects() {
+export default function Projects(d) {
   return (
-    <div className="  h-screen mb-28 m-0 sn ">
+    <div className="  h-screen mb-28 m-0 sn " id={d.id}>
       <div className="card h-full  absolute block p-3 overfl ow-y-clip">
         <h1 className="font-bold text-center">
           <Title text={"Projects"} />
