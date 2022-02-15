@@ -6,7 +6,7 @@ import "react-tabs/style/react-tabs.css";
 
 export default function Projects(d) {
   return (
-    <div className="  h-screen mb-28 m-0 sn " id={d.id}>
+    <div className=" relative h-screen mb-28 m-0 sn " id={d.id}>
       <div className="card h-full  absolute block p-3 overfl ow-y-clip">
         <h1 className="font-bold text-center">
           <Title text={"Projects"} />
@@ -36,7 +36,7 @@ export default function Projects(d) {
                       src={project.image}
                       class="max-h- 40 w-full object-cover absolute h-full z-0"
                     />
-                    <div class="absolute inset-0 opacity-75 duration-200 bg-slate-900 group-hover:opacity-0 w-full p-4"></div>
+                    <div class=" absolute inset-0 opacity-75 duration-200 bg-slate-900 group-hover:opacity-0 w-full p-4"></div>
                     <div className=" absolute  bottom-0 w-full p-4 group-hover:hidden bg-gradient-to-t from-mygray m-0">
                       <p class="text-papayaWhip text-xl font-medium">
                         {project.title}

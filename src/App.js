@@ -10,6 +10,7 @@ import Footer from "./Components/Footer";
 import Blog from "./Components/Blog/blog";
 import { Routes, Route, BrowserRouter as Router } from "react-router-dom";
 import Fade from "react-reveal/Fade";
+import { TabGroup } from "./Components/Projects2";
 
 export default function App() {
   const pagejsx = (
@@ -19,7 +20,9 @@ export default function App() {
         <Header />
 
         <Setup />
-
+        <Fade bottom>
+          <TabGroup id="projectsTest" />
+        </Fade>
         <Home id="home" />
 
         <Fade bottom>
