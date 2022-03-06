@@ -6,8 +6,8 @@ import "react-tabs/style/react-tabs.css";
 
 export default function Projects(d) {
   return (
-    <div className=" relative h-screen mb-28 m-0 sn " id={d.id}>
-      <div className="card h-full  absolute block p-3 overfl ow-y-clip">
+    <div className=" relative h-screen mb-28 m-0 sn" id={d.id}>
+      <div className="card  absolute block p-3 overfl ow-y-clip">
         <h1 className="font-bold text-center">
           <Title text={"Projects"} />
         </h1>
