@@ -5,6 +5,7 @@ import { Title } from "./title";
 import { HashLink as Link2 } from "react-router-hash-link";
 import { NavData } from "./NavData";
 import Fade from "react-reveal/Fade";
+import Header from "./Header";
 
 const Image = () => {
   return (
@@ -21,24 +22,37 @@ export default function Home(d) {
     <>
       <div className="wrapper h-screen mt-0 " id={d.id}>
         <div className=" home card relative">
+          <Header />
           <Fade bottom cascade>
             <div className="grid place-items-center absolute p-1.5 w-ch30 md:w-3/5 max-w-full">
               <div className="md:absolute md:left-0 md:w-2/5 p-1 md:pr-4 ">
-                <div className=" mb-2 text-center md:text-right">
+                <div className=" mb-2 text-center md:te xt-right">
                   <h1>
+                    <p className=" font-mono fortaa font-bold text-xl text-center ">
+                      Hi there.
+                    </p>
                     <p className=" text-black font-Shadows font-bold text-5xl ">
                       I am Radi.
                     </p>
                   </h1>
                 </div>
-                <div className=" mb-12 md:m-0  text-center md:text-right">
-                  <Title text="Software developer." />
+                <div className=" mb-12 md:m-0  text-center md:te xt-right it alic ">
+                  <Title text="I build things for " />
                   <div>
-                    <small className=" inline-flex gap-2">
-                      <i>
-                        <Title text="2D/3D illustrator." />
-                      </i>
-                      😜
+                    <small className="  gap-2">
+                      <p className="not-itali c text-black ">
+                        <Title text="the digital realm," />
+                      </p>
+                      <Link2
+                        smooth={"true"}
+                        to={NavData.find((x) => x.title === "About").link}
+                      >
+                        <p className="not-itali c text-black inline-flex">
+                          <Title text="I also" />
+                          <span className=" text-blue-500 ">......</span>
+                        </p>
+                        😜
+                      </Link2>
                     </small>
                   </div>
                 </div>

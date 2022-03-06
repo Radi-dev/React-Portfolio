@@ -17,8 +17,6 @@ export default function App() {
     <div className="mother relative cursor-default bg-gradient-t o-t fro m-prim2Dark to -prim2  h-fu ll font-Comfortaa px-5 py-12">
       <div className="bg h-screen inset-0 fixed bg-gradient-to-t from-prim2Dark to-prim2"></div>
       <div className="page-conatainer h-full mx-auto w-full relative ">
-        <Header />
-
         <Setup />
         <Fade bottom>
           <TabGroup id="projectsTest" />

@@ -17,6 +17,9 @@
     @apply lg:hidden transform duration-300 origin-top
     absolute right-0 w-1/2;
   }
+  .wrapper {
+    @apply flex items-center;
+  }
   .card {
     @apply grid place-items-center w-full h-screen90 shadow-2xl text-gray-600 bg-prim1 rounded-3xl;
   }

@@ -44,12 +44,12 @@ export default function Header() {
         rounded-2xl bg-g ray-300 stroke-current text-black w-2/12 md:w-14 sm:w-1/12"
         />
       </Link>
-      <div id="top" className="header sticky top-0 z-10 mx-3">
+      <div id="top" className="absolute stic ky -top-2 -right-2 z-10 mx-3">
         <div className="absolute top-0 m-0 mt-3 right-0">
           <div className="p-1 w-max rounded-md ">
             <div
               className={` ${
-                scrollPosition > 50
+                scrollPosition > 20
                   ? "bg-prim2 scale-75 shadow-lg"
                   : "bg-transparent"
               } lg:hidden transform transition-all ease-in-out box-border cursor-pointer opacity-70 absolute p-1 px-2 md:p-2 right-0 w-12 h-12  rounded-full `}
@@ -59,7 +59,7 @@ export default function Header() {
             </div>
             <div
               className={`${
-                scrollPosition > 50
+                scrollPosition > 20
                   ? "bg-prim2 p-2 shadow-lg"
                   : "bg-transparent"
               }  rounded-xl transition-all pt-4 ease-in-out lg:flex hidden`}

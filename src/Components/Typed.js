@@ -4,14 +4,14 @@ import Typing from "react-typing-animation";
 let data = [
   "Python",
   "Javascript",
-  "React js",
   "Django",
-  "Node js",
+  "React js",
+  "React Native",
+  "Firebase",
   "MongoDB",
   "Arduino",
   "Git",
   "Photoshop",
-  "Blender 3d",
   "...",
 ];
 data = data.concat(data.concat(data));
@@ -90,9 +90,11 @@ export const TypingAnim = () => {
       </div>
       <div
         className=" bg-gray-700 back text-left 
-     text-gray-200 font-mono break-all text-xl absolute inset-x-0 h-full"
+     text-gray-200 font-m ono break-all text-xl absolute inset-x-0 h-full"
       >
-        <Type />
+        <code>
+          <Type />
+        </code>
       </div>
     </div>
   );

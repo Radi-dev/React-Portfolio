@@ -94,16 +94,13 @@ function Setup() {
           {themeModalJsx}
         </div>
       ) : (
-        <div
-          className=" theme-modal -bottom-full 
-        lg:-bottom-full "
-        >
+        <div className=" theme-modal -bottom-full lg:-bottom-full ">
           {themeModalJsx}
         </div>
       )}
 
       <Link2 smooth to="#home" id="top">
-        <ShowOnScroll checkTop={true}>
+        <ShowOnScroll checkTop={true} topPosition={100}>
           <Fade bottom>
             <div className="fixed z-20 w-12 h-12 text-gray-500 opacit y-50 duration-1000 bottom-10 right-10 flex items-center justify-center  bg-sec bg-opacity-25 border border-gray-500 rounded-full">
               <svg
