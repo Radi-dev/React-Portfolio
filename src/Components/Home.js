@@ -51,7 +51,7 @@ export default function Home(d) {
                           <Title text="I also" />
                           <span className=" text-blue-500 ">......</span>
                         </p>
-                        😜
+                        🤭
                       </Link2>
                     </small>
                   </div>
