@@ -44,54 +44,61 @@ export default function Header() {
         rounded-2xl bg-g ray-300 stroke-current text-black w-2/12 md:w-14 sm:w-1/12"
         />
       </Link>
-      <div id="top" className="absolute stic ky -top-2 -right-2 z-10 mx-3">
-        <div className="absolute top-0 m-0 mt-3 right-0">
-          <div className="p-1 w-max rounded-md ">
-            <div
-              className={` ${
-                scrollPosition > 20
-                  ? "bg-prim2 scale-75 shadow-lg"
-                  : "bg-transparent"
-              } lg:hidden transform transition-all ease-in-out box-border cursor-pointer opacity-70 absolute p-1 px-2 md:p-2 right-0 w-12 h-12  rounded-full `}
-              onClick={menuClick}
-            >
-              <Menu />
-            </div>
-            <div
-              className={`${
-                scrollPosition > 20
-                  ? "bg-prim2 p-2 shadow-lg"
-                  : "bg-transparent"
-              }  rounded-xl transition-all pt-4 ease-in-out lg:flex hidden`}
-            >
-              <ul className=" lg:flex gap-4">
-                {NavData.map((val, i) => (
-                  <li
-                    className=" transform transition-all ease-in-out hover:scale-110"
-                    key={i}
-                  >
-                    {val.link[0] === "#"
-                      ? (link = (
-                          <Link2 smooth={"true"} to={val.link}>
-                            {val.title}
-                          </Link2>
-                        ))
-                      : (link = <Link to={val.link}>{val.title}</Link>)}
-                  </li>
-                ))}
-              </ul>
+      <div className="absolute -top-2 -right-0">
+        <div
+          id="top"
+          className={` ${
+            scrollPosition > 200 ? "fixed -top-4 mt-2" : "absolute"
+          } z-10 `}
+        >
+          <div className="absolute top-0 m-0 mt-3 right-0">
+            <div className="p-1 w-max rounded-md ">
+              <div
+                className={` ${
+                  scrollPosition > 20
+                    ? "bg-prim2 scale-75 shadow-lg"
+                    : "bg-transparent"
+                } lg:hidden transform transition-all ease-in-out box-border cursor-pointer opacity-70 absolute p-1 px-2 md:p-2 right-0 w-12 h-12  rounded-full `}
+                onClick={menuClick}
+              >
+                <Menu />
+              </div>
+              <div
+                className={`${
+                  scrollPosition > 20
+                    ? "bg-prim2 p-2 shadow-lg"
+                    : "bg-transparent"
+                }  rounded-xl transition-all pt-4 ease-in-out lg:flex hidden`}
+              >
+                <ul className=" lg:flex gap-4">
+                  {NavData.map((val, i) => (
+                    <li
+                      className=" transform transition-all ease-in-out hover:scale-110"
+                      key={i}
+                    >
+                      {val.link[0] === "#"
+                        ? (link = (
+                            <Link2 smooth={"true"} to={val.link}>
+                              {val.title}
+                            </Link2>
+                          ))
+                        : (link = <Link to={val.link}>{val.title}</Link>)}
+                    </li>
+                  ))}
+                </ul>
+              </div>
             </div>
           </div>
+          {open ? (
+            <div ref={ref} className="navbar p-0 top-4 scale-y-100 opacity-100">
+              <Navbar action={menuClick} />
+            </div>
+          ) : (
+            <div ref={ref} className="navbar top-4 scale-y-0 opacity-0">
+              <Navbar />
+            </div>
+          )}
         </div>
-        {open ? (
-          <div ref={ref} className="navbar p-0 top-4 scale-y-100 opacity-100">
-            <Navbar action={menuClick} />
-          </div>
-        ) : (
-          <div ref={ref} className="navbar top-4 scale-y-0 opacity-0">
-            <Navbar />
-          </div>
-        )}
       </div>
     </>
   );
