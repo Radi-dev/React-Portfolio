@@ -90,10 +90,10 @@ export default function Header() {
       <Link to={"/"}>
         <Logo
           stroke=""
-          className="absolute left-0 top-0 z-10 transition-all pt-4 rounded-2xl bg-g ray-300 stroke-current text-black h-12 w- 2/12 md:w -14 sm:w -1/12"
+          className="absolute left-0 top-1 z-10 transition-all  rounded-2xl stroke-current text-black h-12 "
         />
       </Link>
-      <div className="absolute -top-2 -right-0">
+      <div className="absolute -top-4 -right-0">
         {scrollPosition > 200 ? (
           <div id="top" className="fixed -top-10 mt-8  duration-500 z-10">
             {headerNavJsx}
