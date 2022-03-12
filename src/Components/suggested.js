@@ -1,10 +1,11 @@
 import React from "react";
+import { Title } from "./title";
 
 export default function Suggested(d) {
   return (
     <div className="card h-max overflow-hidden px-2" id={d.id}>
-      <h2 className=" w-full text-xl font-medium mt-2 text-gray-800 capitalize text-center md:text-2xl">
-        Recommended Articles
+      <h2 className=" w-full text-xl font-bold mt-2 text-gray-800 capitalize text-center md:text-2xl">
+        <Title text="Recommended Articles" />
       </h2>
 
       <div className="flex px-4 gap-2 shadow-inner m-2 rounded-lg items-center lg:justify-center w-full overflow-x-auto ">

@@ -19,10 +19,10 @@ export default function About(d) {
         <h1 className="font-bold my-2">
           <Title text="Who I Be" />
         </h1>
-        <div className=" grid md:grid-cols-2 gap-7 place-items-center items-start px-6 h-full overflow-y-auto">
+        <div className=" grid md:grid-cols-2 gap-7 place-items-center items-start px-6 h-full overflow-y-auto md:overflow-hidden">
           <Fade bottom cascade>
             <Image />
-            <div className="flex flex-col items-center w-11/12 md:w-96 py-4">
+            <div className="flex flex-col items-center w-11/12 lg:w-96 py-4 md:h-full md:overflow-y-auto">
               <p className="my-5">
                 In this post, I will present a step by step procedure to deploy
                 a Django project to shared hosting. This is one of the options
@@ -33,7 +33,9 @@ export default function About(d) {
                 deploy a Django project to shared hosting. This is one of the
                 options that you can avail to deploy your
               </p>
-              <TypingAnim />
+              <p className="w-full">
+                <TypingAnim />
+              </p>
               <p className="my-5">
                 In this post, I will present a step by step procedure to deploy
                 a Django project to shared hosting. This is one of the options
