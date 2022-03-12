@@ -25,7 +25,7 @@ function Setup() {
     <>
       <ShowOnScroll>
         <Fade left cascade>
-          <div className="bor der grid gap-5 shad ow-lg fixed cursor-pointer transform rounded-lg px-3 py-1 z-20 bottom-1/4 left-2  ">
+          <div className=" bor der grid gap-5 shad ow-lg fixed cursor-pointer transform rounded-lg px-3 py-1 z-20 bottom-1/4 left-2  ">
             {SocialLinks.map((social, i) => (
               <a key={i} href={social.url} target="_blank" rel="noreferrer">
                 <div className="hover:scale-110 cursor-pointer">
@@ -43,7 +43,7 @@ function Setup() {
                 x="0px"
                 y="0px"
                 viewBox="0 0 64 64"
-                className=" w-full h-full"
+                className=" animate-spin w-full h-full"
               >
                 <path
                   fill="#c2cde7"

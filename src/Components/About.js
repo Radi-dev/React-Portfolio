@@ -19,7 +19,7 @@ export default function About(d) {
         <h1 className="font-bold my-2">
           <Title text="Who I Be" />
         </h1>
-        <div className="grid md:grid-cols-2 gap-7 place-items-center items-start px-6 h-full overflow-y-auto">
+        <div className=" grid md:grid-cols-2 gap-7 place-items-center items-start px-6 h-full overflow-y-auto">
           <Fade bottom cascade>
             <Image />
             <div className="flex flex-col items-center w-11/12 md:w-96 py-4">
