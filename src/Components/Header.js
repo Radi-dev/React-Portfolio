@@ -95,7 +95,7 @@ export default function Header() {
       </Link>
       <div className="absolute -top-2 -right-0">
         {scrollPosition > 200 ? (
-          <div id="top" className="fixed -top-10 mt-8  duration-200 z-10">
+          <div id="top" className="fixed -top-10 mt-8  duration-500 z-10">
             {headerNavJsx}
           </div>
         ) : (
