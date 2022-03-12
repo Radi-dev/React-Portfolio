@@ -30,7 +30,7 @@ export default function Projects(d) {
               <br />
               <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-8">
                 {projects.map((project, i) => (
-                  <div class="overflow-hidden group relative shadow-lg rounded-lg h-96 w-60 md:w-80 m-auto">
+                  <div class="overflow-hidden group relative shadow-xl rounded-lg h-96 w-60 md:w-80 m-auto">
                     <img
                       alt={project.title}
                       src={project.image}

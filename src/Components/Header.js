@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 import { HashLink as Link2 } from "react-router-hash-link";
 import { ScrollPosition } from "./scroll";
 import { Logo } from "./logo";
-import { Menu } from "./menu";
+import { MenuIcon as Menu } from "./menuIcon";
 import Fade from "react-reveal/Fade";
 
 // custom Hook
@@ -37,7 +37,7 @@ export default function Header() {
   let scrollPosition = ScrollPosition();
   const headerNavJsx = (
     <>
-      <div className="absolute top-0 m-0 mt-3 right-0">
+      <div className="absolute top-0 m-0 mt-3 right-1">
         <div className="p-1 w-max rounded-md ">
           <div
             className={` ${
@@ -90,13 +90,12 @@ export default function Header() {
       <Link to={"/"}>
         <Logo
           stroke=""
-          className="absolute left-0 top-0 z-10 transition-all pt-4 duration-1000 
-        rounded-2xl bg-g ray-300 stroke-current text-black w-2/12 md:w-14 sm:w-1/12"
+          className="absolute left-0 top-0 z-10 transition-all pt-4 rounded-2xl bg-g ray-300 stroke-current text-black h-12 w- 2/12 md:w -14 sm:w -1/12"
         />
       </Link>
       <div className="absolute -top-2 -right-0">
         {scrollPosition > 200 ? (
-          <div id="top" className="fixed -top-10 mt-8  duration-1000 z-10">
+          <div id="top" className="fixed -top-10 mt-8  duration-200 z-10">
             {headerNavJsx}
           </div>
         ) : (

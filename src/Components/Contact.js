@@ -9,9 +9,8 @@ export default function Contact(d) {
           <div className="text-white mt-10">
             <h1 className="font-bold text-4xl">Contact me</h1>
             <p className="font-semibold">
-              <Title text={"Send me an "} />
               <a href="mailto:">
-                <Title text={"email!"} />
+                <Title text={"Send me an email!"} />
               </a>
             </p>
           </div>

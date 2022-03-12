@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 import { HashLink as Link2 } from "react-router-hash-link";
 import { ScrollPosition } from "../scroll";
 import { Logo } from "../logo";
-import { Menu } from "../menu";
+import { MenuIcon as Menu } from "../menuIcon";
 
 // custom Hook
 function OnClickOutside(ref, handler) {

@@ -1,4 +1,4 @@
-export const Menu = ({ stroke = "black", fill = "black", ...props }) => {
+export const MenuIcon = ({ stroke = "black", fill = "black", ...props }) => {
   let strokeColor = stroke;
   let strokeWidth = "1.08332086";
   let fillColor = fill;
