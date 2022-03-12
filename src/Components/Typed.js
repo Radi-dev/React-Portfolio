@@ -17,7 +17,7 @@ data = data.concat(data.concat(data));
 const Type = () => (
   <div className="typing">
     <span className="p-2 text-gray-400"> Skills: ~$</span>
-    <Typing speed={30} hideCursor={true} loop={true} className="inline">
+    <Typing speed={40} hideCursor={true} loop={true} className="inline">
       {data.map((data, i) => {
         return (
           <span key={i} style={{ color: randColor() }}>
