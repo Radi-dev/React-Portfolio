@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useRef } from "react";
 
 import Navbar from "../Navbar";
-import { NavData } from "../NavData";
+import { NavData } from "./blogNavData";
 import { Link } from "react-router-dom";
 import { HashLink as Link2 } from "react-router-hash-link";
 import { ScrollPosition } from "../scroll";

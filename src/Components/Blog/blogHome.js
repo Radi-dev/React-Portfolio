@@ -5,8 +5,8 @@ import Setup from "../Setup";
 export default function BlogHome(d = "blog") {
   return (
     <div className=" card overflow-hidden h-full mx-auto w-full relative ">
-      <div className="  h-full m-0 sn mt-2" id={d.id}>
-        <div className=" mt-20 h-full space-y-3 lg:bg-gray-50 border-gray-400 border z-10 rounded-lg mb-3">
+      <div className="  h-full m-0 mt-2 w-full" id={d.id}>
+        <div className=" mt-20 h-full space-y-3 lg:b g-gray-50 border-gray-400 border z-10 rounded-lg mb-3 w-full">
           <div className="h-full w-full px-5 pt-6 pb-20 overflow-y-auto">
             <div className="mb-3">
               <h1 className="text-3xl font-bold">Today</h1>
@@ -155,144 +155,146 @@ export default function BlogHome(d = "blog") {
             <div className="mb-3">
               <h1 className="text-3xl font-bold">Previous</h1>
             </div>
-            <div>
-              <a
-                href="#"
-                className="flex w-full transform transition-all duration-300 scale-100 hover:scale-95"
-              >
-                <div
-                  className="block h-24 w-2/5 rounded overflow-hidden"
-                  style={{
-                    background:
-                      "url(https://images.unsplash.com/photo-1530549387789-4c1017266635?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60) center",
-                    backgroundSize: "cover",
-                  }}
-                ></div>
-                <div className="pl-3 w-3/5">
-                  <p className="text-xs text-gray-500 uppercase font-semibold">
-                    SPORTS
-                  </p>
-                  <h3 className="text-md font-semibold leading-tight mb-3">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit
-                  </h3>
-                  <div className="flex w-full items-center text-xs text-gray-500 font-medium">
-                    <div
-                      className="rounded-full w-5 h-5 mr-3"
-                      style={{
-                        background:
-                          "url(https://randomuser.me/api/portraits/men/41.jpg) center",
-                        backgroundSize: "cover",
-                      }}
-                    ></div>
-                    <div>Jack Ryan</div>
+            <div className="grid md:grid-cols-2">
+              <div>
+                <a
+                  href="#"
+                  className="flex w-full transform transition-all duration-300 scale-100 hover:scale-95"
+                >
+                  <div
+                    className="block h-24 w-2/5 rounded overflow-hidden"
+                    style={{
+                      background:
+                        "url(https://images.unsplash.com/photo-1530549387789-4c1017266635?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60) center",
+                      backgroundSize: "cover",
+                    }}
+                  ></div>
+                  <div className="pl-3 w-3/5">
+                    <p className="text-xs text-gray-500 uppercase font-semibold">
+                      SPORTS
+                    </p>
+                    <h3 className="text-md font-semibold leading-tight mb-3">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit
+                    </h3>
+                    <div className="flex w-full items-center text-xs text-gray-500 font-medium">
+                      <div
+                        className="rounded-full w-5 h-5 mr-3"
+                        style={{
+                          background:
+                            "url(https://randomuser.me/api/portraits/men/41.jpg) center",
+                          backgroundSize: "cover",
+                        }}
+                      ></div>
+                      <div>Jack Ryan</div>
+                    </div>
                   </div>
-                </div>
-              </a>
-            </div>
-            <hr className="border-gray-200 my-3" />
-            <div>
-              <a
-                href="#"
-                className="flex w-full transform transition-all duration-300 scale-100 hover:scale-95"
-              >
-                <div
-                  className="block h-24 w-2/5 rounded overflow-hidden"
-                  style={{
-                    background:
-                      "url(https://images.unsplash.com/photo-1499781350541-7783f6c6a0c8?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60) center",
-                    backgroundSize: "cover",
-                  }}
-                ></div>
-                <div className="pl-3 w-3/5">
-                  <p className="text-xs text-gray-500 uppercase font-semibold">
-                    ART
-                  </p>
-                  <h3 className="text-md font-semibold leading-tight mb-3">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit
-                  </h3>
-                  <div className="flex w-full items-center text-xs text-gray-500 font-medium">
-                    <div
-                      className="rounded-full w-5 h-5 mr-3"
-                      style={{
-                        background:
-                          "url(https://randomuser.me/api/portraits/men/63.jpg) center",
-                        backgroundSize: "cover",
-                      }}
-                    ></div>
-                    <div>Kevin Jackson</div>
+                </a>
+                <hr className="border-gray-200 my-3" />
+              </div>
+              <div>
+                <a
+                  href="#"
+                  className="flex w-full transform transition-all duration-300 scale-100 hover:scale-95"
+                >
+                  <div
+                    className="block h-24 w-2/5 rounded overflow-hidden"
+                    style={{
+                      background:
+                        "url(https://images.unsplash.com/photo-1499781350541-7783f6c6a0c8?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60) center",
+                      backgroundSize: "cover",
+                    }}
+                  ></div>
+                  <div className="pl-3 w-3/5">
+                    <p className="text-xs text-gray-500 uppercase font-semibold">
+                      ART
+                    </p>
+                    <h3 className="text-md font-semibold leading-tight mb-3">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit
+                    </h3>
+                    <div className="flex w-full items-center text-xs text-gray-500 font-medium">
+                      <div
+                        className="rounded-full w-5 h-5 mr-3"
+                        style={{
+                          background:
+                            "url(https://randomuser.me/api/portraits/men/63.jpg) center",
+                          backgroundSize: "cover",
+                        }}
+                      ></div>
+                      <div>Kevin Jackson</div>
+                    </div>
                   </div>
-                </div>
-              </a>
-            </div>
-            <hr className="border-gray-200 my-3" />
-            <div>
-              <a
-                href="#"
-                className="flex w-full transform transition-all duration-300 scale-100 hover:scale-95"
-              >
-                <div
-                  className="block h-24 w-2/5 rounded overflow-hidden"
-                  style={{
-                    background:
-                      "url(https://images.unsplash.com/photo-1505740420928-5e560c06d30e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60) center",
-                    backgroundSize: "cover",
-                  }}
-                ></div>
-                <div className="pl-3 w-3/5">
-                  <p className="text-xs text-gray-500 uppercase font-semibold">
-                    MUSIC
-                  </p>
-                  <h3 className="text-md font-semibold leading-tight mb-3">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit
-                  </h3>
-                  <div className="flex w-full items-center text-xs text-gray-500 font-medium">
-                    <div
-                      className="rounded-full w-5 h-5 mr-3"
-                      style={{
-                        background:
-                          "url(https://randomuser.me/api/portraits/women/11.jpg) center",
-                        backgroundSize: "cover",
-                      }}
-                    ></div>
-                    <div>Rowena Wheeler</div>
+                </a>
+                <hr className="border-gray-200 my-3" />
+              </div>
+              <div>
+                <a
+                  href="#"
+                  className="flex w-full transform transition-all duration-300 scale-100 hover:scale-95"
+                >
+                  <div
+                    className="block h-24 w-2/5 rounded overflow-hidden"
+                    style={{
+                      background:
+                        "url(https://images.unsplash.com/photo-1505740420928-5e560c06d30e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60) center",
+                      backgroundSize: "cover",
+                    }}
+                  ></div>
+                  <div className="pl-3 w-3/5">
+                    <p className="text-xs text-gray-500 uppercase font-semibold">
+                      MUSIC
+                    </p>
+                    <h3 className="text-md font-semibold leading-tight mb-3">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit
+                    </h3>
+                    <div className="flex w-full items-center text-xs text-gray-500 font-medium">
+                      <div
+                        className="rounded-full w-5 h-5 mr-3"
+                        style={{
+                          background:
+                            "url(https://randomuser.me/api/portraits/women/11.jpg) center",
+                          backgroundSize: "cover",
+                        }}
+                      ></div>
+                      <div>Rowena Wheeler</div>
+                    </div>
                   </div>
-                </div>
-              </a>
-            </div>
-            <hr className="border-gray-200 my-3" />
-            <div>
-              <a
-                href="#"
-                className="flex w-full transform transition-all duration-300 scale-100 hover:scale-95"
-              >
-                <div
-                  className="block h-24 w-2/5 rounded overflow-hidden"
-                  style={{
-                    background:
-                      "url(https://images.unsplash.com/photo-1511068797325-6083f0f872b1?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60) center",
-                    backgroundSize: "cover",
-                  }}
-                ></div>
-                <div className="pl-3 w-3/5">
-                  <p className="text-xs text-gray-500 uppercase font-semibold">
-                    WORLD
-                  </p>
-                  <h3 className="text-md font-semibold leading-tight mb-3">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit
-                  </h3>
-                  <div className="flex w-full items-center text-xs text-gray-500 font-medium">
-                    <div
-                      className="rounded-full w-5 h-5 mr-3"
-                      style={{
-                        background:
-                          "url(https://randomuser.me/api/portraits/women/74.jpg) center",
-                        backgroundSize: "cover",
-                      }}
-                    ></div>
-                    <div>Gwen Thomson</div>
+                </a>
+                <hr className="border-gray-200 my-3" />
+              </div>
+              <div>
+                <a
+                  href="#"
+                  className="flex w-full transform transition-all duration-300 scale-100 hover:scale-95"
+                >
+                  <div
+                    className="block h-24 w-2/5 rounded overflow-hidden"
+                    style={{
+                      background:
+                        "url(https://images.unsplash.com/photo-1511068797325-6083f0f872b1?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60) center",
+                      backgroundSize: "cover",
+                    }}
+                  ></div>
+                  <div className="pl-3 w-3/5">
+                    <p className="text-xs text-gray-500 uppercase font-semibold">
+                      WORLD
+                    </p>
+                    <h3 className="text-md font-semibold leading-tight mb-3">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit
+                    </h3>
+                    <div className="flex w-full items-center text-xs text-gray-500 font-medium">
+                      <div
+                        className="rounded-full w-5 h-5 mr-3"
+                        style={{
+                          background:
+                            "url(https://randomuser.me/api/portraits/women/74.jpg) center",
+                          backgroundSize: "cover",
+                        }}
+                      ></div>
+                      <div>Gwen Thomson</div>
+                    </div>
                   </div>
-                </div>
-              </a>
+                </a>
+              </div>
             </div>
           </div>
         </div>
