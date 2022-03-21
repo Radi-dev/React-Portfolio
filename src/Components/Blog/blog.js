@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import BlogHome from "./blogHome";
 import Post from "./blogPost";
 import Header from "./blogHeader";
@@ -14,7 +14,6 @@ import {
   Navigate,
   BrowserRouter as Router,
 } from "react-router-dom";
-import { useState } from "react/cjs/react.development";
 
 export default function Blog() {
   const [loggedIn, setLoggedIn] = useState(true);
