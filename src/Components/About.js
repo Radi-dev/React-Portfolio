@@ -29,7 +29,7 @@ export default function About(d) {
                 Hi there, my name is Evaristus "Radi" Anarado. I'm a full stack
                 software developer with a background in digital illustration.
                 After a couple of years of doing illustration for comic books,
-                movies and games, I switched career paths to pursue my dream of
+                movies and games, I switched career path to pursue my dream of
                 building cool stuff with code. I currently have over{" "}
                 {new Date().getFullYear() - 2018} years experience coding
                 professionally.

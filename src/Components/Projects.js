@@ -30,19 +30,19 @@ export default function Projects(d) {
               <br />
               <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-8">
                 {projects.map((project, i) => (
-                  <div class="overflow-hidden group relative shadow-xl rounded-lg h-96 w-60 hover:scale-[101%] md:w-80 m-auto">
+                  <div class="overflow-hidden group relative shadow-xl rounded-lg h-96 w-60 hover:scale-[95%] duration-500 md:w-80 m-auto">
                     <img
                       alt={project.title}
                       src={project.image}
                       class="max-h- 40 w-full object-cover absolute h-full z-0"
                     />
-                    <div class=" absolute inset-0 opacity-75 duration-200 bg-slate-900 group-hover:opacity-0 w-full p-4"></div>
+                    <div class=" absolute inset-0 opacity-75 duration-300 bg-slate-900 group-hover:opacity-0 w-full p-4"></div>
                     <div className=" absolute  bottom-0 w-full p-4 group-hover:hidden bg-gradient-to-t from-mygray m-0">
                       <p class="text-papayaWhip text-xl font-medium">
                         {project.title}
                       </p>
                     </div>
-                    <div className="absolute w-full block -bottom-full group-hover:bottom-0 duration-200 eas e-linear z-10 ">
+                    <div className="absolute w-full block -bottom-full group-hover:bottom-0 duration-300 eas e-linear z-10 ">
                       <div className="shade opacity- 40 -z-[1] absolute h-full w-full bottom-0">
                         <div className=" absolute  top-0 w-full h-1/4 bg-gradient-to-t from-mygray m-0"></div>
                         <div class="absolute bottom-0 h-3/4 bg-mygray w-full p-4"></div>
@@ -137,19 +137,19 @@ export default function Projects(d) {
                   {projects
                     .filter((object) => object.category.includes(category.id))
                     .map((project, i) => (
-                      <div class="overflow-hidden group relative shadow-lg rounded-lg h-96 w-60 hover:scale-[101%] md:w-80 m-auto">
+                      <div class="overflow-hidden group relative shadow-lg rounded-lg h-96 w-60 hover:scale-[95%] duration-500 md:w-80 m-auto">
                         <img
                           alt={project.title}
                           src={project.image}
                           class="max-h- 40 w-full object-cover absolute h-full opac ity-40 z-0"
                         />
-                        <div class="absolute inset-0 opacity-75 duration-200 bg-slate-900 group-hover:opacity-0 w-full p-4"></div>
+                        <div class="absolute inset-0 opacity-75 duration-300 bg-slate-900 group-hover:opacity-0 w-full p-4"></div>
                         <div className=" absolute  bottom-0 w-full p-4 group-hover:hidden bg-gradient-to-t from-mygray m-0">
                           <p class="text-papayaWhip text-xl font-medium">
                             {project.title}
                           </p>
                         </div>
-                        <div className="absolute w-full block -bottom-full group-hover:bottom-0 duration-200 eas e-linear z-10 ">
+                        <div className="absolute w-full block -bottom-full group-hover:bottom-0 duration-300 eas e-linear z-10 ">
                           <div className="shade opacity- 40 -z-[1] absolute h-full w-full bottom-0">
                             <div className=" absolute  top-0 w-full h-1/4 bg-gradient-to-t from-mygray m-0"></div>
                             <div class="absolute bottom-0 h-3/4 bg-mygray w-full p-4"></div>

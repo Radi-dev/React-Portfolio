@@ -90,7 +90,7 @@ export default function Header() {
       <Link to={"/"}>
         <Logo
           stroke=""
-          className="absolute left-0 top-1 z-10 transition-all  rounded-2xl stroke-current text-black h-12 "
+          className="absolute left-0 top-1 z-10 transition-all  rounded-2xl stroke-current text-slate-700 h-12 "
         />
       </Link>
       <div className="absolute -top-4 -right-0">

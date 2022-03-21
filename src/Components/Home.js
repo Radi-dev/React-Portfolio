@@ -30,7 +30,7 @@ export default function Home(d) {
                       <div className="absolute w-sc reen w-[calc(100%/1.3)] h-0.5 opacity-10 bg-slate-600"></div>
                     </span>
                     <br />
-                    <p className="gap-2 flex items-center font-sa ns Shadows font-black text-6xl text-slate-700 ">
+                    <p className="gap-2 flex items-center font-black text-6xl text-slate-800 ">
                       <span className=" font-mono text-xl text-slate-600">
                         I am
                       </span>
@@ -43,7 +43,7 @@ export default function Home(d) {
                 </div>
                 <br />
                 <div className=" mb-12 md:mb-0 font-sans ml-5">
-                  <p className=" text-[9vw] md:text-5xl font-medium text-slate-600">
+                  <p className=" text-[9vw] md:text-4xl font-medium text-slate-600">
                     I build things for
                   </p>
                   <div>
