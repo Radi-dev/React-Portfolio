@@ -15,8 +15,9 @@ module.exports = {
       },
       maxHeight: { screen90: "80vh" },
       fontFamily: {
-        Comfortaa: ["Comfortaa", "Arial", "Helvetica", "sans-serif"],
         Shadows: ["Shadows Into Light Two", "Arial", "Helvetica", "sans-serif"],
+        Roboto: ["Roboto", "sans-serif"],
+        Montserrat: ["Montserrat", "sans-serif"],
       },
       colors: {
         transparent: "transparent",

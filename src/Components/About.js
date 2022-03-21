@@ -24,16 +24,15 @@ export default function About(d) {
         </h1>
         <div className=" grid md:grid-cols-2 shadow-inner gap-7 items-start px-6 h-full overflow-y-auto md:overflow-hidden">
           <Fade bottom cascade>
-            <div className="flex flex-col items-center w-11/12 lg:w-96 py-4 md:h-full md:overflow-y-auto">
+            <div className="flex flex-col font-mono items-center w-11/12 lg:w-96 py-4 md:h-full md:overflow-y-auto">
               <p className="my-5">
-                In this post, I will present a step by step procedure to deploy
-                a Django project to shared hosting. This is one of the options
-                that you can avail to deploy yourIn this post, I will present a
-                step by step procedure to deploy a Django project to shared
-                hosting. This is one of the options that you can avail to deploy
-                yourIn this post, I will present a step by step procedure to
-                deploy a Django project to shared hosting. This is one of the
-                options that you can avail to deploy your
+                Hi there, my name is Evaristus "Radi" Anarado. I'm a full stack
+                software developer with a background in digital illustration.
+                After a couple of years of doing illustration for comic books,
+                movies and games, I switched career paths to pursue my dream of
+                building cool stuff with code. I currently have over{" "}
+                {new Date().getFullYear() - 2018} years experience coding
+                professionally.
               </p>
               <p className="w-full">
                 <TypingAnim />

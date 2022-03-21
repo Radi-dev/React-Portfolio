@@ -14,39 +14,48 @@ export default function Home(d) {
           <div className="h-12 ">
             <Header />
           </div>
-          <div className=" w-11/12 md:w-96 p-2 h-full overflow-y-auto ">
+          <div className=" w-11/12 md:w-96 p-2 h-full overflow-hidden ">
             <Fade bottom cascade>
               <div className="">
+                <span className="flex items-center relative">
+                  <div className="absolute h-screen w-0.5 opacity-10 bg-slate-400"></div>
+                </span>
                 <div className=" mb-2">
                   <h1>
-                    <p className=" font-mono fortaa fo nt-bold text-xl">
+                    <p className=" font-mono text-xl">
                       <Title text="Hi " />
-                      <Title text="there," />
+                      <Title text="there, " />
                     </p>
-                    <p className=" text-black font-Shadows font-black text-6xl ">
-                      I am Radi.
+                    <span className="flex items-center relative">
+                      <div className="absolute w-sc reen w-[calc(100%/1.3)] h-0.5 opacity-10 bg-slate-600"></div>
+                    </span>
+                    <br />
+                    <p className="gap-2 flex items-center font-sa ns Shadows font-black text-6xl text-slate-700 ">
+                      <span className=" font-mono text-xl text-slate-600">
+                        I am
+                      </span>
+                      Radi.
+                      <span className="flex items-center">
+                        <div className="absolute h-screen w-0.5 opacity-20 bg-slate-400"></div>
+                      </span>
                     </p>
                   </h1>
                 </div>
-                <div className=" mb-12 md:m-0 font-sans md:te xt-right">
-                  <p className=" text-[9vw] md:text-5xl font-medium">
+                <br />
+                <div className=" mb-12 md:mb-0 font-sans ml-5">
+                  <p className=" text-[9vw] md:text-5xl font-medium text-slate-600">
                     I build things for
                   </p>
                   <div>
-                    <p className=" font-bold text-[7vw] md:text-4xl ">
-                      the digital realm.🤭
+                    <p className=" font-bold text-[7vw] md:text-4xl text-slate-500 ">
+                      the digital realm.
                     </p>
-                    <p className="not-itali text-[3.8vw] md:text-lg fl ex inline ">
+                    <p className=" italic text-[3.8vw] md:text-lg inline text-slate-400 ">
                       <span className="">
-                        {`In this post, I will present a step by step procedure to
-                        deploy a Django project to shared hosting. This is one
-                        of the options that you can avail to deploy yourIn this
-                        post, I will present a step by step procedure to deploy
-                        a Django project to shared hosting. This is one of the
-                        options that you can avail to deploy yourIn this post, I
-                        will present a step by step procedure to deploy a Django
-                        project to shared hosting. This is one of the options
-                        that you can avail to deploy your`.slice(0, 150)}
+                        {`I'm a fullstack developer with a background in digital illustration`.slice(
+                          0,
+                          80
+                        )}
                       </span>
                       <Link2
                         smooth={"true"}
@@ -58,7 +67,7 @@ export default function Home(d) {
                   </div>
                 </div>
 
-                <div className=" bottom-0 flex justify-between mx-auto w-full py-1 text-sec">
+                <div className=" ml-5 bottom-0 flex justify-between mx-auto w-f ull py-1 text-sec">
                   <Link2
                     smooth={"true"}
                     to={NavData.find((x) => x.title === "Projects").link}

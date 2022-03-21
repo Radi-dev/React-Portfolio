@@ -7,7 +7,6 @@ import About from "./blogAbout";
 import Login from "./blogLogin";
 import Admin from "./blogAdmin";
 import NotFound from "./blog404";
-import Home from "../Home";
 import {
   Routes,
   Route,
@@ -20,7 +19,7 @@ export default function Blog() {
   return (
     <div className="mother cursor-default bg-gradient-to-t from-prim2Dark to-prim2 bg-f ixed bg-co h-full font-Comfortaa px-5 py-12">
       <div className="page-conatainer h-full mx-auto w-full relative ">
-        <Header />
+        <Header loggedIn={loggedIn} />
 
         <Routes>
           <Route path="/" element={<BlogHome />} />

@@ -1,8 +1,9 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-@import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&family=Shadows+Into+Light+Two&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
 
 @layer components {
   .typing:after {
@@ -25,22 +26,13 @@
   }
   .theme-modal {
     @apply shadow-md z-20 fixed lg:rounded-b-none inset-x-0.5 md:inset-x-6 
-     lg:w-1/2 h-2/3 md:h-2/4 bg-gray-200 duration-500 ease-in-out 
+     lg:w-1/2 h-[50%] md:h-2/4 bg-gray-200 duration-500 ease-in-out 
     rounded-t-3xl md:rounded-3xl p-10;
   }
   .button {
     @apply p-0.5 shadow-lg rounded border border-highl text-sec ring-white ring-1 active:scale-105 hover:ring-offset-2;
   }
 
-  .color {
-    background-color: #feece9;
-  }
-  .sec {
-    background-color: #2f3a8f;
-  }
-  .back {
-    background-color: #2f3a8f;
-  }
   @keyframes blink {
     50% {
       opacity: 0;
@@ -48,29 +40,10 @@
   }
 }
 @layer utilities {
-  .snap {
-    scroll-snap-type: var(--scroll-snap-direction) var(--scroll-snap-constraint);
-  }
-  .snap-y {
-    --scroll-snap-direction: y;
-  }
-
-  .snap-mandatory {
-    --scroll-snap-constraint: mandatory;
-  }
-
-  .snap-start {
-    scroll-snap-align: start;
-  }
-
   @layer base {
     html {
       -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
       -webkit-tap-highlight-color: transparent;
     }
   }
-}
-.ddiv {
-  background-image: linear-gradient(#0c1e34, #ffd35c);
-  color: #181818;
 }

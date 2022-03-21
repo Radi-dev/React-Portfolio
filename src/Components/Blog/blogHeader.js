@@ -27,13 +27,17 @@ function OnClickOutside(ref, handler) {
   }, [ref, handler]);
 }
 
-export default function Header() {
+export default function Header({ loggedIn }) {
   const [open, setOpen] = useState(false);
   const ref = useRef();
   const menuClick = () => setOpen(!open);
   OnClickOutside(ref, () => setOpen(false));
   let link = "#";
   let scrollPosition = ScrollPosition();
+  if (loggedIn) {
+    if (NavData.includes({ title: "Admin", link: "/blog/admin" })) {
+    } else NavData.push({ title: "Admin", link: "/blog/admin" });
+  }
 
   return (
     <section className=" ">

@@ -7,22 +7,25 @@ let data = [
   "Django",
   "React js",
   "React Native",
+  "Node js",
   "Firebase",
+  "MongoDB",
   "Arduino",
   "Photoshop",
+  "Figma",
   "...🤭",
 ];
 data = data.concat(data.concat(data));
 
 const Type = () => (
-  <div className="typing">
+  <div className="typing font-mono">
     <span className="p-2 text-gray-400"> Skills: ~$</span>
-    <Typing speed={40} hideCursor={true} loop={true} className="inline">
+    <Typing speed={30} hideCursor={true} loop={true} className="inline">
       {data.map((data, i) => {
         return (
           <span key={i} style={{ color: randColor() }}>
             {data}
-            <Typing.Delay ms={300} />
+            <Typing.Delay ms={100} />
             <Typing.Backspace count={data.length} />
           </span>
         );
