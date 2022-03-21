@@ -37,6 +37,11 @@ export default function About(d) {
               <p className="w-full">
                 <TypingAnim />
               </p>
+              <br />
+
+              <h1 className="font-medium flex gap-7 my-2 underline underline-offset-2 w-full justify-center ">
+                My Skills.
+              </h1>
               <p className="my-5">
                 In this post, I will present a step by step procedure to deploy
                 a Django project to shared hosting. This is one of the options

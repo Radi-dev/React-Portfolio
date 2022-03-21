@@ -18,7 +18,7 @@ export default function Home(d) {
             <Fade bottom cascade>
               <div className="">
                 <span className="flex items-center relative">
-                  <div className="absolute h-screen w-0.5 opacity-10 bg-slate-400"></div>
+                  <div className="absolute h-screen w-0.5 opacity-20 bg-prim2Dark"></div>
                 </span>
                 <div className=" mb-2">
                   <h1>
@@ -27,7 +27,7 @@ export default function Home(d) {
                       <Title text="there, " />
                     </p>
                     <span className="flex items-center relative">
-                      <div className="absolute w-sc reen w-[calc(100%/1.3)] h-0.5 opacity-10 bg-slate-600"></div>
+                      <div className="absolute w-sc reen w-[calc(100%/1.3)] h-0.5 opacity-10 bg-prim2Dark"></div>
                     </span>
                     <br />
                     <p className="gap-2 flex items-center font-black text-6xl text-slate-800 ">
@@ -36,7 +36,7 @@ export default function Home(d) {
                       </span>
                       Radi.
                       <span className="flex items-center">
-                        <div className="absolute h-screen w-0.5 opacity-20 bg-slate-400"></div>
+                        <div className="absolute h-screen w-0.5 opacity-20 bg-prim2Dark"></div>
                       </span>
                     </p>
                   </h1>
@@ -52,7 +52,7 @@ export default function Home(d) {
                     </p>
                     <p className=" italic text-[3.8vw] md:text-lg inline text-slate-400 ">
                       <span className="">
-                        {`I'm a fullstack developer with a background in digital illustration`.slice(
+                        {`A fullstack developer with a background in digital illustration`.slice(
                           0,
                           80
                         )}

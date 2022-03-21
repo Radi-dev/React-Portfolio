@@ -18,8 +18,8 @@ let data = [
 data = data.concat(data.concat(data));
 
 const Type = () => (
-  <div className="typing font-mono">
-    <span className="p-2 text-gray-400"> Skills: ~$</span>
+  <div className="typing font-mono text-base">
+    <span className="p-2 text-sm text-gray-50"> radi:/tech/stack~$</span>
     <Typing speed={30} hideCursor={true} loop={true} className="inline">
       {data.map((data, i) => {
         return (

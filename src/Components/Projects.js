@@ -5,6 +5,7 @@ import { Title } from "./title";
 import "react-tabs/style/react-tabs.css";
 
 export default function Projects(d) {
+  const rand = () => Math.floor(Math.random() * 15) + 10;
   return (
     <div className="wrapper relative h-screen m-0" id={d.id}>
       <div className="card  absolute block p-3 overfl ow-y-clip">
@@ -26,15 +27,22 @@ export default function Projects(d) {
           </TabList>
 
           <TabPanel>
-            <div className="All-projects overflow-y-auto inset-x-0 absolute bottom-10 top-24 rounded p-2 shadow-inner">
+            <div className="all-projects overflow-y-auto inset-x-0 max-w-[1200px] mx-auto absolute bottom-10 top-24 rounded p-2 shadow-inner">
               <br />
-              <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-8">
+              <div class="pb-10 column s-2 md:columns-3 xl :columns-4 mx-auto gap -x-3 space-y-3">
                 {projects.map((project, i) => (
-                  <div class="overflow-hidden group relative shadow-xl rounded-lg h-96 w-60 hover:scale-[95%] duration-500 md:w-80 m-auto">
+                  <div
+                    style={
+                      {
+                        //height: rand() + "rem"
+                      }
+                    }
+                    class=" break-inside-avoid overflow-hidden group relative shadow-xl rounded-lg hover:scale-[95%] duration-500 max-w-[20rem]"
+                  >
                     <img
                       alt={project.title}
                       src={project.image}
-                      class="max-h- 40 w-full object-cover absolute h-full z-0"
+                      class="max-h-96 w-full object-cover object-center ab solute z-0"
                     />
                     <div class=" absolute inset-0 opacity-75 duration-300 bg-slate-900 group-hover:opacity-0 w-full p-4"></div>
                     <div className=" absolute  bottom-0 w-full p-4 group-hover:hidden bg-gradient-to-t from-mygray m-0">
