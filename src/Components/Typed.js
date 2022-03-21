@@ -25,7 +25,7 @@ const Type = () => (
         return (
           <span key={i} style={{ color: randColor() }}>
             {data}
-            <Typing.Delay ms={300} />
+            <Typing.Delay ms={500} />
             <Typing.Backspace count={data.length} />
           </span>
         );
