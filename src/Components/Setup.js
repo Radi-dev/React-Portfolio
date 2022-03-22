@@ -25,10 +25,10 @@ function Setup() {
     <>
       <ShowOnScroll>
         <Fade left cascade>
-          <div className=" bor der grid gap-5 shad ow-lg fixed cursor-pointer transform rounded-lg px-3 py-1 z-20 bottom-1/4 left-2  ">
+          <div className="fixed cursor-pointer rounded-lg px-3 py-1 z-20 bottom-1/4 left-2 ">
             {SocialLinks.map((social, i) => (
               <a key={i} href={social.url} target="_blank" rel="noreferrer">
-                <div className="hover:scale-110 cursor-pointer">
+                <div className="hover:scale-110 mb-5 cursor-pointer">
                   <div className=" h-6 w-6 ">{social.icon}</div>
                 </div>
               </a>

@@ -1,0 +1,42 @@
+Did volunteer work as a full-stack engineer for
+ Osita intl' Institute, a local startup creating 
+ a college experience online for courses tailored 
+ towards skill acquisition Designed and built the 
+ full course enrollment web app for. The job entailed 
+ building a REST API with full CRUD functionalities 
+ and authentication in Python and then consuming the 
+ API on a React front end, then setting an external
+  route to a WordPress blog. 
+
+  Stack:- Django, MySql, React.js,
+App url:- https://ositainstitute.com
+GitHub Repo:
+Front end: https://github.com/Radi-dev/Class-Enrollment-Frontend-React
+Back end: https://github.com/Radi-dev/Class-Enrollment-Backend-Django
+
+
+
+
+
+The image editor accepts an image and a  spreadsheet or CSV file and the various app controls let the user drag, resize, and edit text from each column of the first row read from file. Then a batch process repeats these steps for all the CSV rows and thereafter batch downloads the edited images as png.
+Stack: React js
+App URL: https://radi-image-editor.netlify.app/
+GitHub repo: https://github.com/Radi-dev/Image-editor
+
+
+
+
+
+Over the years, I've built several personal projects. Among them is my portfolio website which has a React frontend and will consume data from and post to a Realtime Firebase API. The site has a main section and a blog section which is also built with React.
+Stack: React Js, Firebase
+App URL: https://radidev.com
+GitHub: https://github.com/Radi-dev/React-Portfolio
+Some other projects in the works include:
+------
+--Blog post scheduler web app:
+This is an app I'm currently building to schedule and auto-publish articles to multiple blogging platforms, In this case, my blog project and dev.to using the DEV API. This app will run a Node.js backend, MongoDB database, and a React.js frontend
+Stack: Node.Js, Express.Js, MongoDB, React.Js
+GitHub: https://github.com/Radi-dev/post-scheduler
+--Blog post scheduler mobile app:
+A mobile app utilizing the same back end from the blog post scheduler app.
+Stack: React Native

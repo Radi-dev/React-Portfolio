@@ -26,7 +26,7 @@
   }
   .theme-modal {
     @apply shadow-md z-20 fixed lg:rounded-b-none inset-x-0.5 md:inset-x-6 
-     lg:w-1/2 h-[50%] md:h-2/4 bg-gray-200 duration-500 ease-in-out 
+     lg:w-1/2 h-1/2 md:h-2/4 bg-gray-200 duration-500 ease-in-out 
     rounded-t-3xl md:rounded-3xl p-10;
   }
   .button {
@@ -40,8 +40,13 @@
   }
 }
 @layer utilities {
+  .fixed {
+    transform: translateZ(0);
+    -webkit-transform: translateZ(0);
+  }
   @layer base {
     html {
+      height: 100%;
       -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
       -webkit-tap-highlight-color: transparent;
     }

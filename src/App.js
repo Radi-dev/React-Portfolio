@@ -10,7 +10,6 @@ import Footer from "./Components/Footer";
 import Blog from "./Components/Blog/blog";
 import { Routes, Route, BrowserRouter as Router } from "react-router-dom";
 import Fade from "react-reveal/Fade";
-import { TabGroup } from "./Components/Projects2";
 
 export default function App() {
   const pagejsx = (
@@ -18,9 +17,6 @@ export default function App() {
       <div className="bg h-screen inset-0 fixed bg-gradient-to-t from-prim2Dark to-prim2"></div>
       <div className="page-conatainer h-full mx-auto w-full relative ">
         <Setup />
-        <Fade bottom>
-          <TabGroup id="projectsTest" />
-        </Fade>
         <Home id="home" />
 
         <Fade bottom>
