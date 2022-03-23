@@ -4,7 +4,10 @@ import { siteData } from "./projectData";
 import { Title } from "./title";
 import "react-tabs/style/react-tabs.css";
 
+import { databaseURL } from "../firebaseSettings";
+
 export default function Projects(d) {
+  console.log("db url is: " + databaseURL);
   const categoriesObject = siteData.site.projectCategories;
   const projectsObject = siteData.site.projects;
   let projects = [];
