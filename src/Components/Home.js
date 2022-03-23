@@ -8,7 +8,7 @@ import Header from "./Header";
 import { databaseURL } from "../firebaseSettings";
 
 export default function Home(d) {
-  console.log(databaseURL);
+  console.log("db url is: " + databaseURL);
   return (
     <>
       <div className="wrapper h-screen mt-0 " id={d.id}>
