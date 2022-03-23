@@ -149,6 +149,7 @@ export default function Projects(d) {
                 <br />
                 <div class="pb-10 column s-2 md:columns-3 xl :columns-4 mx-auto gap -x-3 space-y-3">
                   {console.log(category.title)}
+                  {console.log("db url is: " + databaseURL)}
                   {projects
                     .filter((project) =>
                       Object.values(project.category).includes(category.title)
