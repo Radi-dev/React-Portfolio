@@ -11,6 +11,7 @@ module.exports = {
       },
       minHeight: {
         "1/5": "3ch",
+        50: "10em",
         screen90: "80vh",
       },
       maxHeight: { screen90: "80vh" },

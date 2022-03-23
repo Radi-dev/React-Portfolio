@@ -5,8 +5,10 @@ import { HashLink as Link2 } from "react-router-hash-link";
 import { NavData } from "./NavData";
 import Fade from "react-reveal/Fade";
 import Header from "./Header";
+import { databaseURL } from "../firebaseSettings";
 
 export default function Home(d) {
+  console.log(databaseURL);
   return (
     <>
       <div className="wrapper h-screen mt-0 " id={d.id}>
