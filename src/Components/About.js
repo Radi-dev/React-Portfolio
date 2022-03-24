@@ -51,7 +51,7 @@ export default function About(d) {
                 <li>Api design</li>
                 <li>Web Scraping</li>
                 <li>Arduino Robotics</li>
-                <li>Front-end Development</li>
+                <li>Digital Illustration</li>
               </ul>
             </div>
             <Fade right>

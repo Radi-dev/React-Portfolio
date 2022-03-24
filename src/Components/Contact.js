@@ -8,18 +8,18 @@ export default function Contact(d) {
     <>
       <Fade right>
         <div
-          className="fixed animate-bounce cursor-pointer rounded-lg z-20 bottom-1/4 right-6 "
+          className="fixed animate-bounce cursor-pointer rounded-lg z-20 bottom-1/4 right-4 "
           onClick={() => setContactForm(!contactForm)}
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"
             x="0px"
             y="0px"
-            width="50"
-            height="50"
+            width="40"
+            height="40"
             viewBox="0 0 172 172"
             style={{ fill: "#000000" }}
-            className="animate-bounce"
+            className="animate-bounce mx-auto"
           >
             <g transform="translate(4.73,4.73) scale(0.945,0.945)">
               <g
@@ -149,7 +149,9 @@ export default function Contact(d) {
               </g>
             </g>
           </svg>
-          <p className=" animate-pulse underline underline-offset-2">Hire Me</p>
+          <p className=" animate-pulse underline underline-offset-2 text-gray-900">
+            Hire Me
+          </p>
         </div>
       </Fade>
       <div
@@ -162,7 +164,7 @@ export default function Contact(d) {
 
         <div className=" mx-auto relative bg-prim2 flex flex-col border border-gray-900 rounded-lg p-2 box-border">
           <div
-            className=" text-center absolute top-2 border border-gray-600 active:border-white hover:scale-95 right-2 h-6 w-6 rounded-full bg-prim2Dark"
+            className=" text-center text-gray-500 absolute top-2 border border-gray-600 active:border-white hover:scale-95 right-2 h-6 w-6 rounded-full bg-prim2Dark"
             onClick={() => setContactForm(false)}
           >
             X
@@ -192,7 +194,7 @@ export default function Contact(d) {
             <textarea
               name="textarea"
               placeholder="text..."
-              rows="8"
+              rows="4"
               className="border rounded-lg py -3 p x-3 bg-gray-100 border-gray-500 placeholder-gray-400"
             ></textarea>
             <div className=" text-center border active:bg-transparent hover:scale-95 border-blue-500 w-2/4 mx-auto bg-blue-300 text-white rounded-lg py-3 font-semibold">
