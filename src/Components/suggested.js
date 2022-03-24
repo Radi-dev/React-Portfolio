@@ -3,7 +3,7 @@ import { Title } from "./title";
 
 export default function Suggested(d) {
   return (
-    <div className="card h-max overflow-hidden px-2" id={d.id}>
+    <div className="card min-h-full h-max overflow-hidden px-2" id={d.id}>
       <h2 className=" w-full text-xl font-bold mt-2 text-gray-800 capitalize text-center md:text-2xl">
         <Title text="Recommended Articles" />
       </h2>

@@ -4,10 +4,7 @@ import { siteData } from "./projectData";
 import { Title } from "./title";
 import "react-tabs/style/react-tabs.css";
 
-import { databaseURL } from "../firebaseSettings";
-
 export default function Projects(d) {
-  console.log("db url is: " + databaseURL);
   const categoriesObject = siteData.site.projectCategories;
   const projectsObject = siteData.site.projects;
   let projects = [];
@@ -21,7 +18,7 @@ export default function Projects(d) {
   console.log(categories, projects);
   return (
     <div className="wrapper relative h-screen m-0" id={d.id}>
-      <div className="card  absolute block p-3 overfl ow-y-clip">
+      <div className="card absolute block p-3 overfl ow-y-clip">
         <h1 className="font-bold text-center">
           <Title text={"Projects"} />
         </h1>
@@ -48,7 +45,7 @@ export default function Projects(d) {
                     <img
                       alt={project.title}
                       src={project.images.cover}
-                      class="max-h-96 w-full object-cover object-center ab solute z-0"
+                      class="max-h-96 min-h-[8rem] w-full object-cover object-center z-0"
                     />
                     <div class=" absolute inset-0 opacity-75 duration-300 bg-slate-900 group-hover:opacity-0 w-full p-4"></div>
                     <div className=" absolute  bottom-0 w-full p-4 group-hover:hidden bg-gradient-to-t from-mygray m-0">
@@ -149,9 +146,6 @@ export default function Projects(d) {
                 <br />
                 <div class="pb-10 column s-2 md:columns-3 xl :columns-4 mx-auto gap -x-3 space-y-3">
                   {console.log(category.title)}
-                  {console.log("db url is: " + databaseURL)}
-
-                  {console.log("db url is: ")}
                   {projects
                     .filter((project) =>
                       Object.values(project.category).includes(category.title)
@@ -161,7 +155,7 @@ export default function Projects(d) {
                         <img
                           alt={project.title}
                           src={project.images.cover}
-                          class="max-h-96 w-full object-cover object-center ab solute z-0"
+                          class="max-h-96 min-h-[8rem] w-full object-cover object-center z-0"
                         />
                         <div class="absolute inset-0 opacity-75 duration-300 bg-slate-900 group-hover:opacity-0 w-full p-4"></div>
                         <div className=" absolute  bottom-0 w-full p-4 group-hover:hidden bg-gradient-to-t from-mygray m-0">

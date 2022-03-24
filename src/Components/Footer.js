@@ -5,7 +5,7 @@ import { HashLink as Link2 } from "react-router-hash-link";
 export default function Footer({ navD }) {
   const NavDat = navD ? navD : NavData;
   return (
-    <div className="card p-0 relative rounded-t-md mt-5 h-60 md:h-52 lg:h-48  overflow-y-hidden bottom-0 bg-prim2">
+    <div className="card min-h-full p-0 relative rounded-t-md mt-5 h-60 md:h-52 lg:h-48  overflow-y-hidden bottom-0 bg-prim2">
       <section className="bg-gra y-900 bg-mygray absolute inset-0 top-0 ">
         <div className="max-w-screen-xl px-4 py-12 mx-auto overflow-hidden sm:px-6 lg:px-8">
           <nav className="flex flex-wrap justify-center -mx-5 -my-2">

@@ -13,10 +13,6 @@ export const NavData = [
     link: "#about",
   },
   {
-    title: "Contact",
-    link: "#contact",
-  },
-  {
     title: "Blog",
     link: "blog",
   },

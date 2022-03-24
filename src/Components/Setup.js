@@ -86,6 +86,7 @@ function Setup() {
           </div>
         </Fade>
       </ShowOnScroll>
+
       {openModal ? (
         <div
           className="theme-modal bg-white bottom-0 md:bottom-1/4 

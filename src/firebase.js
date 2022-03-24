@@ -1,25 +1,15 @@
 import { initializeApp } from "firebase/app";
 import { getDatabase, ref, onValue } from "firebase/database";
-import {
-  apiKey,
-  authDomain,
-  databaseURL,
-  projectId,
-  storageBucket,
-  messagingSenderId,
-  appId,
-  measurementId,
-} from "./firebaseSettings";
 
 const firebaseConfig = {
-  apiKey: apiKey,
-  authDomain: authDomain,
-  databaseURL: databaseURL,
-  projectId: projectId,
-  storageBucket: storageBucket,
-  messagingSenderId: messagingSenderId,
-  appId: appId,
-  measurementId: measurementId,
+  apiKey: process.env.REACT_APP_apiKey, //your apiKey here
+  authDomain: process.env.REACT_APP_authDomain, //your authDomain
+  databaseURL: process.env.REACT_APP_databaseURL, //your databaseURL
+  projectId: process.env.REACT_APP_projectId, //...
+  storageBucket: process.env.REACT_APP_storageBucket, //...
+  messagingSenderId: process.env.REACT_APP_messagingSenderId, //...
+  appId: process.env.REACT_APP_appId, //...
+  measurementId: process.env.REACT_APP_measurementId, //...
 };
 
 // Initialize Firebase

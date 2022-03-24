@@ -42,16 +42,17 @@ export default function About(d) {
               <h1 className="font-medium flex gap-7 my-2 underline underline-offset-2 w-full justify-center ">
                 My Skills.
               </h1>
-              <p className="my-5">
-                In this post, I will present a step by step procedure to deploy
-                a Django project to shared hosting. This is one of the options
-                that you can avail to deploy yourIn this post, I will present a
-                step by step procedure to deploy a Django project to shared
-                hosting. This is one of the options that you can avail to deploy
-                yourIn this post, I will present a step by step procedure to
-                deploy a Django project to shared hosting. This is one of the
-                options that you can avail to deploy your
-              </p>
+              <ul className="my-5">
+                <li>Full-stack Development</li>
+                <li>Front-end Development</li>
+                <li>Back-end Development</li>
+                <li>Mobile Development</li>
+                <li>UI/UX Design</li>
+                <li>Api design</li>
+                <li>Web Scraping</li>
+                <li>Arduino Robotics</li>
+                <li>Front-end Development</li>
+              </ul>
             </div>
             <Fade right>
               <Image />

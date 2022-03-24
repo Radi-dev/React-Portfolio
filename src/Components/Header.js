@@ -37,7 +37,7 @@ export default function Header() {
   let scrollPosition = ScrollPosition();
   const headerNavJsx = (
     <>
-      <div className="absolute top-0 m-0 mt-3 right-1">
+      <div className="absolute top-1 m-0 mt-3 right-1">
         <div className="p-1 w-max rounded-md ">
           <div
             className={` ${
@@ -74,7 +74,7 @@ export default function Header() {
         </div>
       </div>
       {open ? (
-        <div ref={ref} className="navbar p-0 top-4 scale-y-100 opacity-100">
+        <div ref={ref} className="navbar p-1 top-4 scale-y-100 opacity-100">
           <Navbar action={menuClick} />
         </div>
       ) : (

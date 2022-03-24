@@ -10,7 +10,7 @@ let data = [
   "Node js",
   "Firebase",
   "MongoDB",
-  "Arduino",
+  "Arduino C++",
   "Photoshop",
   "Figma",
   "...🤭",

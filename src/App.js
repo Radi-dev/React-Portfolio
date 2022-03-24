@@ -13,29 +13,30 @@ import Fade from "react-reveal/Fade";
 
 export default function App() {
   const pagejsx = (
-    <div className="mother relative cursor-default font-Montserrat px-5 py-12">
-      <div className="bg h-screen inset-0 fixed bg-gradient-to-t from-prim2Dark to-prim2"></div>
-      <div className="page-conatainer h-full mx-auto w-full relative ">
-        <Setup />
-        <Home id="home" />
+    <>
+      <div className="mother relative cursor-default font-Montserrat px-5 py-12">
+        <div className="bg h-screen inset-0 fixed bg-gradient-to-t from-prim2Dark to-prim2"></div>
+        <div className="page-conatainer h-full mx-auto w-full relative ">
+          <Setup />
+          <Home id="home" />
 
-        <Fade bottom>
-          <Projects id="projects" />
-        </Fade>
-        <Fade bottom>
-          <About id="about" />
-        </Fade>
-        <Fade bottom>
-          <Contact id="contact" />
-        </Fade>
-        <Fade bottom>
-          <Suggested id="suggested" />
-        </Fade>
-        <Fade bottom>
-          <Footer />
-        </Fade>
+          <Fade bottom>
+            <Projects id="projects" />
+          </Fade>
+          <Fade bottom>
+            <About id="about" />
+          </Fade>
+
+          <Fade bottom>
+            <Suggested id="suggested" />
+          </Fade>
+          <Fade bottom>
+            <Footer />
+          </Fade>
+        </div>
       </div>
-    </div>
+      <Contact id="contact" />
+    </>
   );
   return (
     <Router>

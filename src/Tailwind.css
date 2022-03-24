@@ -19,10 +19,10 @@
     absolute right-0 w-1/2;
   }
   .wrapper {
-    @apply flex items-center;
+    @apply flex items-center min-h-[580px];
   }
   .card {
-    @apply grid place-items-center w-full h-screen90 shadow-2xl text-gray-600 bg-prim1 rounded-3xl;
+    @apply grid place-items-center min-h-[480px] w-full h-screen90 shadow-2xl text-gray-600 bg-prim1 rounded-3xl;
   }
   .theme-modal {
     @apply shadow-md z-20 fixed lg:rounded-b-none inset-x-0.5 md:inset-x-6 
@@ -30,7 +30,7 @@
     rounded-t-3xl md:rounded-3xl p-10;
   }
   .button {
-    @apply p-0.5 shadow-lg rounded border border-highl text-sec ring-white ring-1 active:scale-105 hover:ring-offset-2;
+    @apply p-0.5 shadow-lg rounded border border-blue-500 text-sec ring-white active:ring-1 active:bg-transparent hover:scale-95 bg-blue-200;
   }
 
   @keyframes blink {

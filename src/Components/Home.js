@@ -5,10 +5,8 @@ import { HashLink as Link2 } from "react-router-hash-link";
 import { NavData } from "./NavData";
 import Fade from "react-reveal/Fade";
 import Header from "./Header";
-import { databaseURL } from "../firebaseSettings";
 
 export default function Home(d) {
-  console.log("db url is: " + databaseURL);
   return (
     <>
       <div className="wrapper h-screen mt-0 " id={d.id}>
@@ -69,18 +67,12 @@ export default function Home(d) {
                   </div>
                 </div>
 
-                <div className=" ml-5 bottom-0 flex justify-between mx-auto w-f ull py-1 text-sec">
+                <div className=" ml-5 bottom-0 flex justify-center md:justify-start mx-auto w-f ull py-1 text-sec">
                   <Link2
                     smooth={"true"}
                     to={NavData.find((x) => x.title === "Projects").link}
                   >
-                    <div className="button border-sec ">Portfolio</div>
-                  </Link2>
-                  <Link2
-                    smooth={"true"}
-                    to={NavData.find((x) => x.title === "Contact").link}
-                  >
-                    <div className="button ">Contact me</div>
+                    <div className="button animate-pulse ">Portfolio</div>
                   </Link2>
                 </div>
               </div>
