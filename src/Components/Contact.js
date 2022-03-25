@@ -8,13 +8,13 @@ export default function Contact(d) {
     <>
       <Fade right>
         <div
-          className="fixed cursor-pointer rounded-lg z-20 bottom-1/4 right-6 "
+          className="fixed cursor-pointer rounded-lg z-20 bottom-1/4 right-5 "
           onClick={() => setContactForm(!contactForm)}
         >
-          <div className="rotate-180">
+          <div className="rotate-180 ">
             <svg
               xmlns="http://www.w3.org/2000/svg"
-              className="h-5 w-5 animate-bounce mx-auto text-highl mb-2"
+              className="h-5 w-3 animate-bounce mx-auto text-highl mb-2"
               fill="none"
               strokeWidth="5px"
               viewBox="0 0 24 24"
@@ -32,11 +32,11 @@ export default function Contact(d) {
             xmlns="http://www.w3.org/2000/svg"
             x="0px"
             y="0px"
-            width="48"
-            height="48"
+            width="30"
+            height="30"
             viewBox="0 0 172 172"
             style={{ fill: "#000000" }}
-            className=" mx-auto animate-pulse"
+            className=" mx-auto "
           >
             <g
               fill="none"
@@ -75,7 +75,7 @@ export default function Contact(d) {
               </g>
             </g>
           </svg>
-          <p className=" animate-pulse underline underline-offset-2 text-gray-900">
+          <p className=" animate-pulse underline underline-offset-2 text-xs text-gray-600">
             Hire Me
           </p>
         </div>
