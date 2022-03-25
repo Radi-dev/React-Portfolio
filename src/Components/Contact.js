@@ -32,8 +32,8 @@ export default function Contact(d) {
             xmlns="http://www.w3.org/2000/svg"
             x="0px"
             y="0px"
-            width="30"
-            height="30"
+            width="38"
+            height="38"
             viewBox="0 0 172 172"
             style={{ fill: "#000000" }}
             className=" mx-auto "
