@@ -47,9 +47,9 @@ export default function projectsObj(d) {
             </TabList>
 
             <TabPanel>
-              <div className="all-projectsObj overflow-y-auto inset-x-0 max-w-[1200px] mx-auto absolute bottom-10 top-24 rounded p-2 shadow-inner">
+              <div className="all-projectsObj flex overflow-y-auto inset-x-0 max-w-[1200px] mx-auto absolute bottom-10 top-24 rounded p-2 shadow-inner">
                 <br />
-                <div class="pb-10 column s-2 md:columns-3 xl :columns-4 mx-auto gap -x-3 space-y-3">
+                <div class="pb-10 md:columns-3 xl :columns-4 mx-auto gap -x-3 space-y-3">
                   {Object.values(projectsObj).map((project, i) => (
                     <div class=" break-inside-avoid overflow-hidden group relative shadow-xl rounded-lg hover:scale-[95%] duration-500 max-w-[20rem]">
                       <img
@@ -151,7 +151,7 @@ export default function projectsObj(d) {
               <TabPanel>
                 <div
                   key={i}
-                  className="category-projectsObj overflow-y-auto inset-x-0 max-w-[1200px] mx-auto absolute bottom-10 top-24 rounded p-2 shadow-inner"
+                  className="category-projectsObj flex overflow-y-auto inset-x-0 max-w-[1200px] mx-auto absolute bottom-10 top-24 rounded p-2 shadow-inner"
                 >
                   <br />
                   <div class="pb-10 column s-2 md:columns-3 xl :columns-4 mx-auto gap -x-3 space-y-3">
