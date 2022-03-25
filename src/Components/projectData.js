@@ -4,7 +4,7 @@ export const siteData = {
       enrollmentApp: {
         id: 1,
         category: {
-          fullstack: true,
+          Fullstack: true,
         },
         title: "Enrollment app",
         slug: "enrollment-app",
@@ -21,7 +21,7 @@ export const siteData = {
       imageEditor: {
         id: 2,
         category: {
-          frontend: true,
+          Frontend: true,
         },
         title: "Image Editor",
         description: "A web based Image editor",
