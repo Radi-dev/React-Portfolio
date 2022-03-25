@@ -8,9 +8,26 @@ export default function Contact(d) {
     <>
       <Fade right>
         <div
-          className="fixed animate-bounce cursor-pointer rounded-lg z-20 bottom-1/4 right-6 "
+          className="fixed cursor-pointer rounded-lg z-20 bottom-1/4 right-6 "
           onClick={() => setContactForm(!contactForm)}
         >
+          <div className="rotate-180">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              className="h-5 w-5 animate-bounce mx-auto text-highl mb-2"
+              fill="none"
+              strokeWidth="5px"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth={2}
+                d="M5 11l7-7 7 7M5 19l7-7 7 7"
+              />
+            </svg>
+          </div>
           <svg
             xmlns="http://www.w3.org/2000/svg"
             x="0px"
@@ -19,7 +36,7 @@ export default function Contact(d) {
             height="48"
             viewBox="0 0 172 172"
             style={{ fill: "#000000" }}
-            className="animate-bounce mx-auto"
+            className=" mx-auto animate-pulse"
           >
             <g
               fill="none"
@@ -58,7 +75,6 @@ export default function Contact(d) {
               </g>
             </g>
           </svg>
-
           <p className=" animate-pulse underline underline-offset-2 text-gray-900">
             Hire Me
           </p>
@@ -74,7 +90,7 @@ export default function Contact(d) {
 
         <div className=" mx-auto relative bg-prim2 flex flex-col border border-gray-900 rounded-lg p-2 box-border">
           <div
-            className=" text-center text-gray-500 absolute top-2 border border-gray-600 active:border-white hover:scale-95 right-2 h-6 w-6 rounded-full bg-prim2Dark"
+            className=" cursor-pointer text-center text-gray-500 absolute top-2 border border-gray-600 active:border-white hover:scale-95 right-2 h-6 w-6 rounded-full bg-prim2Dark"
             onClick={() => setContactForm(false)}
           >
             X
@@ -87,7 +103,7 @@ export default function Contact(d) {
               </a>
             </p>
           </div>
-          <form className="flex flex-col md:grid md:grid-cols-2 gap-8 mt-10 text-gray-700">
+          <div className="flex flex-col md:grid md:grid-cols-2 gap-8 mt-10 text-gray-700">
             <div className="flex flex-col space-y-8">
               <input
                 type="text"
@@ -110,7 +126,7 @@ export default function Contact(d) {
             <div className=" text-center border active:bg-transparent hover:scale-95 border-blue-500 w-2/4 mx-auto bg-blue-300 text-white rounded-lg py-3 font-semibold">
               Send
             </div>
-          </form>
+          </div>
         </div>
       </div>
     </>

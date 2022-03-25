@@ -67,29 +67,12 @@ export default function Home(d) {
                   </div>
                 </div>
 
-                <div className=" ml-5 bottom-0 flex justify-center md:justify-start mx-auto w-f ull py-1 text-sec">
+                <div className=" ml-5 flex justify-start mx-auto text-sec">
                   <Link2
                     smooth={"true"}
                     to={NavData.find((x) => x.title === "Projects").link}
                   >
                     <div className="button animate-pulse ">Portfolio</div>
-                    <div className="animate-bounce flex place-content-center mt-2 text-highl ">
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        className="h-5 w-5"
-                        fill="none"
-                        strokeWidth="5px"
-                        viewBox="0 0 24 24"
-                        stroke="currentColor"
-                      >
-                        <path
-                          strokeLinecap="round"
-                          strokeLinejoin="round"
-                          strokeWidth={2}
-                          d="M5 11l7-7 7 7M5 19l7-7 7 7"
-                        />
-                      </svg>
-                    </div>
                   </Link2>
                 </div>
               </div>
