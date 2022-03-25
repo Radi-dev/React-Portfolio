@@ -67,13 +67,19 @@ export default function Home(d) {
                   </div>
                 </div>
 
-                <div className=" ml-5 flex justify-start mx-auto text-sec">
+                <div className=" ml-5 flex justify-between mx-auto text-sec">
                   <Link2
                     smooth={"true"}
                     to={NavData.find((x) => x.title === "Projects").link}
                   >
                     <div className="button ">Portfolio</div>
                   </Link2>
+                  <div
+                    className="button bg-highl text-white animate-pulse "
+                    onClick={() => ""}
+                  >
+                    Hire me
+                  </div>
                 </div>
               </div>
             </Fade>
