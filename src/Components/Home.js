@@ -72,7 +72,7 @@ export default function Home(d) {
                     smooth={"true"}
                     to={NavData.find((x) => x.title === "Projects").link}
                   >
-                    <div className="button animate-pulse ">Portfolio</div>
+                    <div className="button ">Portfolio</div>
                   </Link2>
                 </div>
               </div>
