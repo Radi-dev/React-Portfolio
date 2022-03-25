@@ -56,7 +56,7 @@ export default function Projects(d) {
               <TabList>
                 <div className="w-full flex-row flex md:justify-center overflow-x-auto overflow-y-hidden h-max inner">
                   <Tab>
-                    <h1 className=" whitespace-nowrap">All projectsObj</h1>
+                    <h1 className=" whitespace-nowrap">All Projects</h1>
                   </Tab>
                   {activeCategories.map((category, i) => (
                     <Tab>
