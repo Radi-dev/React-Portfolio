@@ -103,7 +103,7 @@ function Setup() {
       <Link2 smooth to="#home" id="top">
         <ShowOnScroll checkTop={true} topPosition={100}>
           <Fade bottom>
-            <div className="fixed z-20 w-12 h-12 text-gray-500 opacit y-50 duration-1000 bottom-10 right-10 flex items-center justify-center  bg-sec bg-opacity-25 border border-gray-500 rounded-full">
+            <div className="fixed z-20 w-6 h-6 text-gray-500 opacit y-50 duration-1000 bottom-10 right-6 flex items-center justify-center  bg-sec bg-opacity-25 border border-gray-500 rounded-full">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 className="h-6 w-6"
