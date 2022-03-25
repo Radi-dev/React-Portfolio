@@ -77,19 +77,15 @@ export default function Projects(d) {
                           src={project.images.cover}
                           class="max-h-96 min-h-[8rem] w-full object-cover object-center z-0"
                         />
-                        <div class=" absolute inset-0 opacity-[.50] duration-300 bg-gray-900 group-hover:opacity-0 w-full p-4"></div>
-                        <div className=" absolute  bottom-0 w-full p-4 group-hover:opacity-0 bg-gradient-to-t from-mygray m-0">
-                          <p class="text-papayaWhip text-xl font-medium">
-                            {project.title}
-                          </p>
-                        </div>
-                        <div className="absolute w-full block -bottom-full group-hover:bottom-0 duration-300 z-10 ">
-                          <div className="shade opacity- 40 -z-[1] absolute h-full w-full bottom-0">
-                            <div className=" absolute  top-0 w-full h-1/4 bg-gradient-to-t from-mygray m-0"></div>
+                        <div class=" absolute inset-0 opacity-[.30] duration-300 bg-gray-900 group-hover:opacity-0 w-full p-4"></div>
+
+                        <div className="absolute w-full -bottom-full group-hover:bottom-0 duration-300 z-10 ">
+                          <div className="shade opacity-70 -z-[1] absolute h-full w-full bottom-0">
+                            <div className=" absolute  top-0.5 w-full h-1/4 bg-gradient-to-t from-mygray m-0"></div>
                             <div class="absolute bottom-0 h-3/4 bg-mygray w-full p-4"></div>
                           </div>
                           <div class=" w-full p-4">
-                            <p class="text-papayaWhip text-xl font-medium">
+                            <p class="text-papayaWhip text-xl font-bold">
                               {project.title}
                             </p>
                             <p class="text-gray-100 font-light text-sm break-words">
@@ -186,19 +182,15 @@ export default function Projects(d) {
                               src={project.images.cover}
                               class="max-h-96 min-h-[8rem] w-full object-cover object-center z-0"
                             />
-                            <div class="absolute inset-0 opacity-75 duration-300 bg-slate-900 group-hover:opacity-0 w-full p-4"></div>
-                            <div className=" absolute  bottom-0 w-full p-4 group-hover:hidden bg-gradient-to-t from-mygray m-0">
-                              <p class="text-papayaWhip text-xl font-medium">
-                                {project.title}
-                              </p>
-                            </div>
+                            <div class="absolute inset-0  opacity-[.30] duration-300 bg-slate-900 group-hover:opacity-0 w-full p-4"></div>
+
                             <div className="absolute w-full block -bottom-full group-hover:bottom-0 duration-300 z-10 ">
-                              <div className="shade opacity- 40 -z-[1] absolute h-full w-full bottom-0">
-                                <div className=" absolute  top-0 w-full h-1/4 bg-gradient-to-t from-mygray m-0"></div>
+                              <div className="shade opacity-70 -z-[1] absolute h-full w-full bottom-0">
+                                <div className=" absolute  top-0.5 w-full h-1/4 bg-gradient-to-t from-mygray m-0"></div>
                                 <div class="absolute bottom-0 h-3/4 bg-mygray w-full p-4"></div>
                               </div>
                               <div class=" w-full p-4">
-                                <p class="text-papayaWhip text-xl font-medium">
+                                <p class="text-papayaWhip text-xl font-bold">
                                   {project.title}
                                 </p>
                                 <p class="text-gray-100 font-light text-sm break-words">
