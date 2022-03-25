@@ -8,7 +8,7 @@ export default function Contact(d) {
     <>
       <Fade right>
         <div
-          className="fixed cursor-pointer rounded-lg z-20 bottom-1/4 right-5 "
+          className="fixed cursor-pointer rounded-lg z-20 bottom-36 right-5 "
           onClick={() => setContactForm(!contactForm)}
         >
           <div className="rotate-180 ">

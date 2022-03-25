@@ -77,8 +77,8 @@ export default function Projects(d) {
                           src={project.images.cover}
                           class="max-h-96 min-h-[8rem] w-full object-cover object-center z-0"
                         />
-                        <div class=" absolute inset-0 opacity-75 duration-300 bg-slate-900 group-hover:opacity-0 w-full p-4"></div>
-                        <div className=" absolute  bottom-0 w-full p-4 group-hover:hidden bg-gradient-to-t from-mygray m-0">
+                        <div class=" absolute inset-0 opacity-[.50] duration-300 bg-gray-900 group-hover:opacity-0 w-full p-4"></div>
+                        <div className=" absolute  bottom-0 w-full p-4 group-hover:opacity-0 bg-gradient-to-t from-mygray m-0">
                           <p class="text-papayaWhip text-xl font-medium">
                             {project.title}
                           </p>
