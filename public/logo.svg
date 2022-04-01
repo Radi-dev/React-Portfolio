@@ -1,79 +1,27 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<svg
-   xmlns:xmp="http://ns.adobe.com/xap/1.0/"
-   xmlns:x="adobe:ns:meta/"
-   xmlns:dc="http://purl.org/dc/elements/1.1/"
-   xmlns:cc="http://creativecommons.org/ns#"
-   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-   xmlns:svg="http://www.w3.org/2000/svg"
-   xmlns="http://www.w3.org/2000/svg"
-   id="svg14"
-   version="1.1"
-   viewBox="0 0 420 399"
-   height="399"
-   width="420">
-  <defs
-     id="defs18" />
-  <metadata
-     id="metadata10">
-<?xpacket begin="�" id="W5M0MpCehiHzreSzNTczkc9d"?>    <x:xmpmeta
-       x:xmptk="Adobe XMP Core 5.6-c145 79.163499, 2018/08/13-16:40:22        ">
-      <metadata>
-        <rdf:RDF>
-          <rdf:Description
-             rdf:about="">
-            <xmp:CreatorTool>Adobe Photoshop CC 2019 (Windows)</xmp:CreatorTool>
-          </rdf:Description>
-          <cc:Work
-             rdf:about="">
-            <dc:format>image/svg+xml</dc:format>
-            <dc:type
-               rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-            <dc:title></dc:title>
-          </cc:Work>
-        </rdf:RDF>
-      </metadata>
-    </x:xmpmeta>
-<?xpacket end="w"?>  </metadata>
-  <g
-     style="stroke:#000000;stroke-opacity:1;stroke-width:5.3;stroke-miterlimit:4;stroke-dasharray:none;fill:none;fill-opacity:1;fill-rule:nonzero;opacity:1;stroke-linejoin:round"
-     transform="translate(60)"
-     id="g4677">
-    <path
-       style="fill:none;stroke:#000000;stroke-width:5.3;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;fill-opacity:1;fill-rule:nonzero"
-       d="m 165.84294,38.441406 v 25.9375 c 0,0 28.14225,-1.97727 28.14225,16.380683 0,18.195508 1.3528,18.865001 0,34.295451 0,20.60785 -28.14225,19.60785 -28.14225,19.60785 0,0 0.30038,21.97382 0,31.19897 0,0 29.27198,2.58571 28.78289,42.34091 l -0.64064,52.07386 0.11174,60.78978 h 68.07912 v -44.5625 L 273,261.87891 272.61973,236.91868 262.17605,217.78232 262.80438,39.197088 250.27075,26 c 5.77887,12.470193 -18.91274,21.12424 -19.36626,10.174361 V 27.106179 L 200.64049,26.350497 182.45504,38 Z"
-       id="path24" />
-    <path
-       style="fill:none;stroke:#000000;stroke-width:5.3;stroke-linecap:butt;stroke-linejoin:round;stroke-opacity:1;stroke-miterlimit:4;stroke-dasharray:none;fill-opacity:1;fill-rule:nonzero"
-       d="M 63.015449,38 H 122.89395 V 65.79297 H 92.9547 c -15.729355,0 -29.939251,0 -29.939251,-13.896485 z"
-       id="path4626" />
-    <path
-       style="fill:none;stroke:#000000;stroke-width:5.3;stroke-linecap:butt;stroke-linejoin:round;stroke-opacity:1;stroke-miterlimit:4;stroke-dasharray:none;fill-opacity:1;fill-rule:nonzero"
-       d="m 63.015449,101 c 0,0 15.554999,0.43503 15.984551,-13 h 43.89395 v 33 H 63.015449 Z"
-       id="path4628" />
-    <path
-       style="fill:none;stroke:#000000;stroke-width:5.3;stroke-linecap:butt;stroke-linejoin:round;stroke-opacity:1;stroke-miterlimit:4;stroke-dasharray:none;fill-opacity:1;fill-rule:nonzero"
-       d="M 0.08464833,88 H 34.908918 v 33 H 0.08464833 Z"
-       id="path4636" />
-    <path
-       style="fill:none;stroke:#000000;stroke-width:5.3;stroke-linecap:butt;stroke-linejoin:round;stroke-opacity:1;stroke-miterlimit:4;stroke-dasharray:none;fill-opacity:1;fill-rule:nonzero"
-       d="M 63.015449,134 H 122.89395 V 360 H 63.015449 Z"
-       id="path4638" />
-    <path
-       style="fill:none;stroke:#000000;stroke-width:5.3;stroke-linecap:butt;stroke-linejoin:round;stroke-opacity:1;stroke-miterlimit:4;stroke-dasharray:none;fill-opacity:1;fill-rule:nonzero"
-       d="m 135.93756,337 h 29.90538 v 23 h -29.90538 z"
-       id="path4642" />
-    <path
-       style="fill:none;stroke:#000000;stroke-width:5.3;stroke-linecap:butt;stroke-linejoin:round;stroke-opacity:1;stroke-miterlimit:4;stroke-dasharray:none;fill-opacity:1;fill-rule:nonzero"
-       d="m 193.98519,337 h 68.19086 v 23 h -68.19086 z"
-       id="path4644" />
-    <path
-       style="fill:none;stroke:#000000;stroke-width:5.3;stroke-linecap:butt;stroke-linejoin:round;stroke-opacity:1;stroke-miterlimit:4;stroke-dasharray:none;fill-opacity:1;fill-rule:nonzero"
-       d="M 165.84294,321.06641 H 135.93756 V 190 c 0,0 29.90538,-2.07137 29.90538,20.55604 0,22.62742 0,110.51037 0,110.51037 z"
-       id="path4646" />
-    <path
-       style="fill:none;stroke:#000000;stroke-width:5.3;stroke-linecap:butt;stroke-linejoin:round;stroke-opacity:1;stroke-miterlimit:4;stroke-dasharray:none;fill-opacity:1;fill-rule:nonzero"
-       d="m 149.90663,88 h 5.65686 c 0,0 6.43651,1.994335 6.43651,7.65119 v 19.09188 c 0,0 0,6.25692 -9.08816,6.25693 h -6.54074 -3.88908 c 0,0 -8.16162,0 -8.16162,-6.25693 V 95.65119 c 0,0 0.70711,-7.65119 9.57583,-7.65119 z"
-       id="path4666" />
-  </g>
-</svg>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 399 420" {...props}>
+      <g
+        style={{
+          stroke: strokeColor,
+          fill: fillColor,
+          strokeWidth: strokeWidth,
+          strokeOpacity: "1",
+          strokeMiterlimit: "4",
+          strokeDasharray: "none",
+          fillOpacity: "1",
+          fillRule: "nonzero",
+          opacity: "1",
+          strokeLinejoin: "round",
+          strokeLinecap: "butt",
+        }}
+      >
+        <path
+          d="M165.843 38.441V64.38s28.142-1.977 28.142 16.38c0 18.196 1.353 18.866 0 34.296 0 20.608-28.142 19.608-28.142 19.608s.3 21.974 0 31.199c0 0 29.272 2.586 28.783 42.34l-.64 52.075.11 60.79h68.08v-44.563L273 261.879l-.38-24.96-10.444-19.137.628-178.585L250.271 26c5.779 12.47-18.913 21.124-19.367 10.174v-9.068l-30.264-.756L182.455 38z"
+          transform="translate(60)"
+        />
+        <path
+          d="M63.015 38h59.879v27.793h-29.94c-15.729 0-29.939 0-29.939-13.897zM63.015 101S78.57 101.435 79 88h43.894v33H63.015zM.085 88h34.824v33H.085zM63.015 134h59.879v226H63.015zM135.938 337h29.905v23h-29.905zM193.985 337h68.191v23h-68.19zM165.843 321.066h-29.905V190s29.905-2.071 29.905 20.556v110.51zM149.907 88h5.656S162 89.994 162 95.651v19.092s0 6.257-9.088 6.257h-10.43s-8.162 0-8.162-6.257V95.651S135.028 88 143.896 88z"
+          transform="translate(60)"
+        />
+      </g>
+    </svg>

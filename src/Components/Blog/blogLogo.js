@@ -1,17 +1,4 @@
-import { useEffect } from "react";
-import Vivus from "vivus";
-
-export const Logo = ({ stroke = "black", fill = "black", ...props }) => {
-  let strokeColor = stroke;
-  let strokeWidth = "1.08332086";
-  let fillColor = fill;
-  useEffect(() => {
-    new Vivus("menu-div", { duration: 160, file: "logo.svg" });
-  }, []);
-
-  return <div id="menu-div" {...props}></div>;
-
-  /* export const Logo = ({ stroke = "black", fill = "none", ...props }) => {
+export const Logo = ({ stroke = "black", fill = "none", ...props }) => {
   let strokeColor = stroke;
   let strokeWidth = "5.5";
   let fillColor = fill;
@@ -43,5 +30,5 @@ export const Logo = ({ stroke = "black", fill = "black", ...props }) => {
         />
       </g>
     </svg>
-  );*/
+  );
 };
