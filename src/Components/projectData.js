@@ -4,7 +4,7 @@ export const siteData = {
       enrollmentApp: {
         id: 1,
         category: {
-          Fullstack: true,
+          Fullstck: true,
         },
         title: "Enrollment app",
         slug: "enrollment-app",

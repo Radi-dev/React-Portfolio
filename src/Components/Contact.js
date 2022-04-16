@@ -40,18 +40,18 @@ export default function Contact(d) {
           >
             <g
               fill="none"
-              fill-rule="nonzero"
+              fillRule="nonzero"
               stroke="none"
               strokeWidth="1"
               strokeLinecap="butt"
               strokeLinejoin="miter"
-              stroke-miterlimit="10"
-              stroke-dasharray=""
-              stroke-dashoffset="0"
-              font-family="none"
-              font-weight="none"
-              font-size="none"
-              text-anchor="none"
+              strokeMiterlimit="10"
+              strokeDasharray=""
+              strokeDashoffset="0"
+              fontFamily="none"
+              fontWeight="none"
+              fontSize="none"
+              textAnchor="none"
               style={{ mixBlendMode: "normal" }}
             >
               <path d="M0,172v-172h172v172z" fill="none"></path>

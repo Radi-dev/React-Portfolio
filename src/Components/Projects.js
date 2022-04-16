@@ -9,7 +9,6 @@ import { ref, onValue } from "firebase/database";
 
 export default function Projects(d) {
   const [loading, setLoading] = useState(true);
-  const [categoriesObj, setCategoriesObj] = useState([]);
   const [projectsObj, setProjectsObj] = useState([]);
 
   //const categoriesObj = siteData.site.projectCategories;
@@ -28,11 +27,13 @@ export default function Projects(d) {
     Object.keys(project.category)
   );
   const categoriesFlattened = [].concat.apply([], o);
-  const activeCategories = Object.values(categoriesObj)
-    .map((value) => value.title)
-    .filter((a) => categoriesFlattened.includes(a));
-
-  console.log(categoriesFlattened, activeCategories);
+  //const activeCategories = Object.values(projectsObj).map((value) =>Object.keys(value.category)).filter((a) => categoriesFlattened.includes(a[0]))// && !activeCategories.includes(a[0]) );
+  const activeCategories=[];
+  categoriesFlattened.forEach(item => {
+    activeCategories.includes(item)?console.log():activeCategories.push(item);
+  });
+  
+  console.log(categoriesFlattened,activeCategories);
   return (
     <>
       <div
@@ -69,26 +70,26 @@ export default function Projects(d) {
               <TabPanel>
                 <div className="all-projectsObj flex overflow-y-auto inset-x-0 max-w-[1200px] mx-auto absolute bottom-10 top-24 rounded p-2 shadow-inner">
                   <br />
-                  <div class="pb-10 md:columns-3 xl :columns-4 mx-auto gap -x-3 space-y-3">
+                  <div className="pb-10 md:columns-3 xl :columns-4 mx-auto gap -x-3 space-y-3">
                     {Object.values(projectsObj).map((project, i) => (
-                      <div class=" break-inside-avoid overflow-hidden group relative shadow-xl rounded-lg hover:scale-[95%] duration-500 max-w-[20rem]">
+                      <div className=" break-inside-avoid overflow-hidden group relative shadow-xl rounded-lg hover:scale-[95%] duration-500 max-w-[20rem]">
                         <img
                           alt={project.title}
                           src={project.images.cover}
-                          class="max-h-96 min-h-[8rem] w-full object-cover object-center z-0"
+                          className="max-h-96 min-h-[8rem] w-full object-cover object-center z-0"
                         />
-                        <div class=" absolute inset-0 opacity-[.30] duration-300 bg-gray-900 group-hover:opacity-0 w-full p-4"></div>
+                        <div className=" absolute inset-0 opacity-[.30] duration-300 bg-gray-900 group-hover:opacity-0 w-full p-4"></div>
 
                         <div className="absolute w-full -bottom-full group-hover:bottom-0 duration-300 z-10 ">
                           <div className="shade opacity-70 -z-[1] absolute h-full w-full bottom-0">
                             <div className=" absolute  top-0.5 w-full h-1/4 bg-gradient-to-t from-mygray m-0"></div>
-                            <div class="absolute bottom-0 h-3/4 bg-mygray w-full p-4"></div>
+                            <div className="absolute bottom-0 h-3/4 bg-mygray w-full p-4"></div>
                           </div>
-                          <div class=" w-full p-4">
-                            <p class="text-papayaWhip text-xl font-bold">
+                          <div className=" w-full p-4">
+                            <p className="text-papayaWhip text-xl font-bold">
                               {project.title}
                             </p>
-                            <p class="text-gray-100 font-light text-sm break-words">
+                            <p className="text-gray-100 font-light text-sm break-words">
                               {!project.blogPost || project.blogPost === "#" ? (
                                 project.description
                               ) : (
@@ -109,7 +110,7 @@ export default function Projects(d) {
                                 </>
                               )}
                             </p>
-                            <div class="flex items-center justify-between mt-4">
+                            <div className="flex items-center justify-between mt-4">
                               {!project.github || project.github === "#" ? (
                                 ""
                               ) : (
@@ -170,30 +171,30 @@ export default function Projects(d) {
                     className="category-projectsObj flex overflow-y-auto inset-x-0 max-w-[1200px] mx-auto absolute bottom-10 top-24 rounded p-2 shadow-inner"
                   >
                     <br />
-                    <div class="pb-10 column s-2 md:columns-3 xl :columns-4 mx-auto gap -x-3 space-y-3">
+                    <div className="pb-10 column s-2 md:columns-3 xl :columns-4 mx-auto gap -x-3 space-y-3">
                       {Object.values(projectsObj)
                         .filter((project) =>
                           Object.keys(project.category).includes(category)
                         )
                         .map((project, i) => (
-                          <div class=" break-inside-avoid overflow-hidden group relative shadow-xl rounded-lg hover:scale-[95%] duration-500 max-w-[20rem]">
+                          <div className=" break-inside-avoid overflow-hidden group relative shadow-xl rounded-lg hover:scale-[95%] duration-500 max-w-[20rem]">
                             <img
                               alt={project.title}
                               src={project.images.cover}
-                              class="max-h-96 min-h-[8rem] w-full object-cover object-center z-0"
+                              className="max-h-96 min-h-[8rem] w-full object-cover object-center z-0"
                             />
-                            <div class="absolute inset-0  opacity-[.30] duration-300 bg-slate-900 group-hover:opacity-0 w-full p-4"></div>
+                            <div className="absolute inset-0  opacity-[.30] duration-300 bg-slate-900 group-hover:opacity-0 w-full p-4"></div>
 
                             <div className="absolute w-full block -bottom-full group-hover:bottom-0 duration-300 z-10 ">
                               <div className="shade opacity-70 -z-[1] absolute h-full w-full bottom-0">
                                 <div className=" absolute  top-0.5 w-full h-1/4 bg-gradient-to-t from-mygray m-0"></div>
-                                <div class="absolute bottom-0 h-3/4 bg-mygray w-full p-4"></div>
+                                <div className="absolute bottom-0 h-3/4 bg-mygray w-full p-4"></div>
                               </div>
-                              <div class=" w-full p-4">
-                                <p class="text-papayaWhip text-xl font-bold">
+                              <div className=" w-full p-4">
+                                <p className="text-papayaWhip text-xl font-bold">
                                   {project.title}
                                 </p>
-                                <p class="text-gray-100 font-light text-sm break-words">
+                                <p className="text-gray-100 font-light text-sm break-words">
                                   {project.description}{" "}
                                   {!project.blogPost ||
                                   project.blogPost === "#" ? (
@@ -215,7 +216,7 @@ export default function Projects(d) {
                                     </>
                                   )}
                                 </p>
-                                <div class="flex items-center justify-between mt-4">
+                                <div className="flex items-center justify-between mt-4">
                                   {!project.github || project.github === "#" ? (
                                     ""
                                   ) : (
