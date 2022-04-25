@@ -68,11 +68,11 @@ export default function Projects(d) {
               </TabList>
 
               <TabPanel>
-                <div className="all-projectsObj flex overflow-y-auto inset-x-0 max-w-[1200px] mx-auto absolute bottom-10 top-24 rounded p-2 shadow-inner">
+                <div className="all-projectsObj flex just ify-items-center overflow-y-auto inset-x-0 max-w-[1200px] m x-auto absolute bottom-10 top-24 rounded p-2 shadow-inner">
                   <br />
-                  <div className="pb-10 md:columns-3 xl :columns-4 mx-auto gap -x-3 space-y-3">
+                  <div className="pb-10 md:columns-2 lg:columns-3 mx-auto space-y-3">
                     {Object.values(projectsObj).map((project, i) => (
-                      <div className=" break-inside-avoid overflow-hidden group relative shadow-xl rounded-lg hover:scale-[95%] duration-500 max-w-[20rem]">
+                      <div className=" break-inside-avoid overflow-hidden group relative shadow-xl rounded-lg hover:scale-[95%] duration-500 w-full max-w-[20rem]">
                         <img
                           alt={project.title}
                           src={project.images.cover}
@@ -168,16 +168,16 @@ export default function Projects(d) {
                 <TabPanel>
                   <div
                     key={i}
-                    className="category-projectsObj flex overflow-y-auto inset-x-0 max-w-[1200px] mx-auto absolute bottom-10 top-24 rounded p-2 shadow-inner"
+                    className="category-projectsObj flex overflow-y-auto inset-x-0 max-w-[1200px] absolute bottom-10 top-24 rounded p-2 shadow-inner"
                   >
                     <br />
-                    <div className="pb-10 column s-2 md:columns-3 xl :columns-4 mx-auto gap -x-3 space-y-3">
+                    <div className="pb-10 column s-2 md:columns-2 lg:columns-3 mx-auto space-y-3">
                       {Object.values(projectsObj)
                         .filter((project) =>
                           Object.keys(project.category).includes(category)
                         )
                         .map((project, i) => (
-                          <div className=" break-inside-avoid overflow-hidden group relative shadow-xl rounded-lg hover:scale-[95%] duration-500 max-w-[20rem]">
+                          <div className=" break-inside-avoid overflow-hidden group relative shadow-xl rounded-lg w-full hover:scale-[95%] duration-500 max-w-[20rem]">
                             <img
                               alt={project.title}
                               src={project.images.cover}
